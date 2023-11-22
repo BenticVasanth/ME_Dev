@@ -1,0 +1,9 @@
+<svg id="Organisation" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="usd-coin-_usdc_" data-name="usd-coin-(usdc)">
+    <path id="Vector" d="M0,0H24V24H0Z" fill="none" opacity="0"/>
+    <g id="frozen_bids" transform="translate(2 1)">
+      <path id="Path_11026" data-name="Path 11026" d="M44.432,0V2.61H41.865V4.536h6.419V2.61H45.716V0Zm6.419,21.91H54.7V7.745H50.851Zm1.284-11.6h1.284V11.6H52.135Zm0,2.568h1.284v1.284H52.135Zm0,2.568h1.284v1.284H52.135Zm0,2.568h1.284V19.3H52.135ZM35.446,21.91H39.3V7.745H35.446Zm1.284-11.6h1.284V11.6H36.73Zm0,2.568h1.284v1.284H36.73Zm0,2.568h1.284v1.284H36.73Zm0,2.568h1.284V19.3H36.73Zm7.7,1.284h1.284v2.61H44.432Z" transform="translate(-35.446)" fill="#5046af"/>
+      <path id="Path_11027" data-name="Path 11027" d="M175.224,167.7h3.851v3.894h2.568V155.5h-8.986v16.09h2.568Zm0-10.27h3.851v1.284h-3.851Zm0,2.568h3.851v1.284h-3.851Zm0,2.568h3.851v1.284h-3.851Zm0,2.568h3.851v1.284h-3.851Z" transform="translate(-167.521 -149.684)" fill="#5046af"/>
+    </g>
+  </g>
+</svg>

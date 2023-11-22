@@ -1,0 +1,45 @@
+{
+    "payment":[
+        {
+        "objectOne":
+        {
+            "id":1,
+            "type": "BG"
+
+        },
+        "objectTwo":[{
+            "id":1,
+            "cover": "Fee/PreQual/Technica",
+            "docType":".pdf",
+            "description":"Ver20/ feedetails/BG/04082023"
+        },
+        {
+            "id":2,
+            "cover": "Finance",
+            "docType":".xls",
+            "description":"Ver20/ feedetails/BG/04082023"
+        }]
+    }
+    ],
+    "bidderlist":[
+        
+       
+            {
+                "id":1,
+                "bidid":4125,
+                "biddername":"Test",
+                "submitteddate":"26-Nov-2014 11:30 AM",
+                "staus":"Accepted-AOC" 
+            },
+            {
+                "id":2,
+                "bidid":4126,
+                "biddername":"Test1",
+                "submitteddate":"27-Nov-2014 11:30 AM",
+                "staus":"Accepted-AOC" 
+            }
+        ]
+        
+
+   
+}

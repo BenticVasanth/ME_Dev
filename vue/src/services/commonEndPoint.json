@@ -1,0 +1,5 @@
+[
+	{"getServerStatus" : "login/getServerStatus"},
+	{"userList" : "login/userList"},
+	{"validUser" : "login/userList/validUser"}
+]
