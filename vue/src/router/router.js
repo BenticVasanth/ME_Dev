@@ -41,7 +41,7 @@ router.beforeEach((to, from, next) => {
   console.log(authRequired);
   // const loggedIn = $global.$store.secureToken;
   if (authRequired) {
-    next('/');
+    next();
   } else {
     if (to.path == '/welcomeDashboard/' || to.path == '/welcomeDashboard') {
       next({
