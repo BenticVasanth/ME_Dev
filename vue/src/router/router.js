@@ -38,7 +38,6 @@ router.beforeEach((to, from, next) => {
   services.checkserver();
   const publicPages = ['/', '/register'];
   const authRequired = !publicPages.includes(to.path);
-  console.log(authRequired);
   // const loggedIn = $global.$store.secureToken;
   if (authRequired) {
     next();

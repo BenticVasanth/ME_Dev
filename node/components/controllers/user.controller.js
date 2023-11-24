@@ -36,3 +36,48 @@ exports.findOne = async (req, res) => {
     res.json(aesUtil.testEncrypt(JSON.stringify(validUser), global.auth_token));
   }
 };
+
+// Create and Save a new User
+exports.create = async (req, res) => {
+  // // Validate request
+  // if (!req.body.title) {
+  //   res.status(400).send({
+  //     message: "Content can not be empty!"
+  //   });
+  //   return;
+  // }
+
+  let response = JSON.parse(aesUtil.testDecrypt(req.body.stringValue, req.get('auth_token')));
+
+  // Create a User Details
+  const userDetails = {
+    UserId: '1',
+    Name: response.firstString,
+    Mobile: "",
+    Email: "",
+    Password: response.secondString,
+    UserIP: "",
+    Location: "",
+    UserType: "",
+    createdAt: "",
+    IsActive: "",
+    IsNotification: ""
+  };
+
+  // Save User Details in the database
+  await Users_Test.create(userDetails)
+    .then(data => {
+      console.log(data);
+      let userDetailsList = {
+        id: "0",
+        stringValue: "Saved Sucessfull"
+      }
+      res.json(aesUtil.testEncrypt(JSON.stringify(userDetailsList), global.auth_token));
+    })
+    .catch(err => {
+      res.status(500).send({
+        message:
+          err.message || "Some error occurred while creating the Users."
+      });
+    });
+};

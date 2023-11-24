@@ -46,10 +46,6 @@ module.exports = {
   },
 
   decrypt(passPhrase, cipherText) {
-    console.log("---passPhrase---");
-    console.log(passPhrase);
-    console.log("---cipherText---");
-    console.log(cipherText);
     var iv = "2f99055bcd81c869a3fa86453365c5b3";
     var salt = "92bd2f379f0846f83b8de8d767b2bf3d";
 
@@ -64,7 +60,6 @@ module.exports = {
       cipherParams,
       key,
       { iv: CryptoJS.enc.Hex.parse(iv) });
-      console.log(decrypted.toString());
     return btoa(decrypted.toString(CryptoJS.enc.Utf8));
   },
   decryptEncodeURIComponent(passPhrase, cipherText) {

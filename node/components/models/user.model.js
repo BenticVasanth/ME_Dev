@@ -25,7 +25,7 @@ module.exports = (sequelize, DataTypes) => {
       UserType: {
         type: DataTypes.STRING
       },
-      CreatedDateTime: {
+      createdAt: {
         type: DataTypes.DATE
       },
       IsActive: {

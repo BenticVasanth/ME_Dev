@@ -1,18 +1,20 @@
 <template>
-<Home/>
-<b-container>
-    <b-card title="Login">
-        <b-form inline class="justify-content-center">
-            <label class="sr-only" for="inline-form-input-name">User Name</label>
-            <b-form-input v-model="userName" id="inline-form-input-name" class="mb-2 mr-sm-2 mb-sm-0" placeholder="Enter User Name"></b-form-input>
+<div>
+    <Home />
+    <b-container>
+        <b-card title="Login">
+            <b-form inline class="justify-content-center">
+                <label class="sr-only" for="inline-form-input-name">User Name</label>
+                <b-form-input v-model="userName" id="inline-form-input-name" class="mb-2 mr-sm-2 mb-sm-0" placeholder="Enter User Name"></b-form-input>
 
-            <label class="sr-only" for="inline-form-input-password">Password</label>
-            <b-form-input v-model="password" type="password" id="inline-form-input-password" class="mb-2 mr-sm-2 mb-sm-0" placeholder="Enter Password"></b-form-input>
+                <label class="sr-only" for="inline-form-input-password">Password</label>
+                <b-form-input v-model="password" type="password" id="inline-form-input-password" class="mb-2 mr-sm-2 mb-sm-0" placeholder="Enter Password"></b-form-input>
 
-            <b-button @click="login" variant="primary">Login</b-button>
-        </b-form>
-    </b-card>
-</b-container>
+                <b-button @click="login" variant="primary">Login</b-button>
+            </b-form>
+        </b-card>
+    </b-container>
+</div>
 </template>
 
 <script>
@@ -22,7 +24,7 @@ import aesUtil from '@/assets/js/aesUtil.js';
 import axios from 'axios';
 export default {
     name: "LoginPage",
-    components:{
+    components: {
         Home
     },
     data() {
@@ -34,26 +36,24 @@ export default {
     methods: {
         login() {
             var formData = {
-                firstString: "7708842885", //this.formMobile,
-                secondString: "avemaria" //this.formPassword
+                firstString: this.userName, //"7708842885",
+                secondString: this.password //"avemaria"
             };
             var jsonFormdata = {
                 id: '',
                 stringValue: aesUtil.methods.testEncrypt(JSON.stringify(formData), this.$store.tokenId)
             };
-            axios.post(this.$validUser, jsonFormdata, {
+            axios.post(this.$addUser, jsonFormdata, {
                 headers: {
                     'auth_token': this.$store.tokenId
                 }
             }).then(res => {
-                console.log(res);
                 var base64StringValue = aesUtil.methods.testDecrypt(res.data, this.$store.tokenId);
                 // this.$store.tokenId = res.headers.auth_token;
                 // if (res.headers.mailsms_token) {
                 //     this.$commonstore.setStore('mailSmsToken', res.headers.mailsms_token);
                 // }
                 var jsonString = JSON.parse(base64StringValue);
-                console.log(jsonString);
                 if (jsonString.id == 0) {
                     alert(jsonString.stringValue)
                     // this.warnAlert(jsonString.stringValue, '', 'failure');
