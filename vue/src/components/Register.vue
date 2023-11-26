@@ -2,15 +2,28 @@
 <div>
     <Home />
     <b-container>
-        <b-card title="Login">
+        <b-card>
+            <b-card-title>Create An Account</b-card-title>
             <b-form inline class="justify-content-center">
                 <label class="sr-only" for="inline-form-input-name">User Name</label>
-                <b-form-input v-model="userName" id="inline-form-input-name" class="mb-2 mr-sm-2 mb-sm-0" placeholder="Enter User Name"></b-form-input>
+                <b-form-input v-model="userName" type="text" id="inline-form-input-name" class="mb-2 mr-sm-2 mb-sm-0" placeholder="Enter User Name"></b-form-input>
 
-                <label class="sr-only" for="inline-form-input-password">Password</label>
-                <b-form-input v-model="password" type="password" id="inline-form-input-password" class="mb-2 mr-sm-2 mb-sm-0" placeholder="Enter Password"></b-form-input>
+                <label class="sr-only" for="inline-form-input-mobile">Mobile No.</label>
+                <b-form-input v-model="mobile" type="number" id="inline-form-input-mobile" class="mb-2 mr-sm-2 mb-sm-0" placeholder="Enter Mobile Number"></b-form-input>
 
-                <b-button @click="login" variant="primary">Login</b-button>
+                <label class="sr-only" for="inline-form-input-email">Email</label>
+                <b-form-input v-model="email" type="email" id="inline-form-input-email" class="mb-2 mr-sm-2 mb-sm-0" placeholder="Enter Email Id"></b-form-input>
+
+                <!-- <label class="sr-only" for="inline-form-input-password">Password</label>
+                <b-form-input v-model="password" type="password" id="inline-form-input-password" class="mb-2 mr-sm-2 mb-sm-0" placeholder="Enter Password"></b-form-input> -->
+            
+                <div class="form-check">
+                    <input v-model="notificationStatus" class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Click for Email Notification
+                    </label>
+                </div>
+                <b-button class="ml-2" @click="login" variant="primary">Login</b-button>
             </b-form>
         </b-card>
     </b-container>
@@ -30,14 +43,20 @@ export default {
     data() {
         return {
             userName: '',
-            password: ''
+            mobile: '',
+            email: "",
+            // password: '',
+            notificationStatus: true
         }
     },
     methods: {
         login() {
             var formData = {
-                firstString: this.userName, //"7708842885",
-                secondString: this.password //"avemaria"
+                userName: this.userName,
+                mobile: this.mobile,
+                email: this.email,
+                notificationStatus: this.notificationStatus
+                // secondString: this.password
             };
             var jsonFormdata = {
                 id: '',
@@ -55,11 +74,9 @@ export default {
                 // }
                 var jsonString = JSON.parse(base64StringValue);
                 if (jsonString.id == 0) {
-                    alert(jsonString.stringValue)
                     // this.warnAlert(jsonString.stringValue, '', 'failure');
                     return false;
                 } else if (jsonString.id == 1) {
-                    alert(jsonString.stringValue)
                     this.router.push({
                         path: "/welcomeDashboard/dashboard"
                     });

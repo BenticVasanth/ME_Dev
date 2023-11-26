@@ -1,7 +1,5 @@
 const express = require("express");
-// const bodyParser = require("body-parser"); /* deprecated */
 const cors = require("cors");
-
 const app = express();
 
 var corsOptions = {
@@ -39,13 +37,13 @@ global.auth_token = "global_auth_token";
 // set port, listen for requests
 const PORT = process.env.PORT || 8081;
 app.listen(PORT, () => {
-  app.get("/login/getServerStatus", (req, res) => {
-    res.status(200).json({
+  app.get("/login/getServerStatus", async (req, res) => {
+    await res.status(200).json({
       data: "Server Up",
       headers: {
         auth_token: global.auth_token
       }
     });
-    console.log(`Server is running on port ${PORT}.`);
   });
+  console.log(`Server is running on port ${PORT}.`);
 });

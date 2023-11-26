@@ -38,9 +38,9 @@ router.beforeEach((to, from, next) => {
   services.checkserver();
   const publicPages = ['/', '/register'];
   const authRequired = !publicPages.includes(to.path);
-  // const loggedIn = $global.$store.secureToken;
-  if (authRequired) {
-    next();
+  const loggedIn = "$global.$store.secureToken";
+  if (authRequired && !loggedIn) {
+    next('/');
   } else {
     if (to.path == '/welcomeDashboard/' || to.path == '/welcomeDashboard') {
       next({
@@ -50,8 +50,9 @@ router.beforeEach((to, from, next) => {
       next({
         name: from.name
       })
+    } else {
+      next();
     }
-    next();
   }
 });
 
