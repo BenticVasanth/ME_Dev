@@ -18,6 +18,9 @@ export default {
             }, {
                 name: "Register",
                 router: "register"
+            }, {
+                name: "Login",
+                router: "login"
             }]
         }
     },

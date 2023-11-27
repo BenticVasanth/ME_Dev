@@ -6,7 +6,7 @@ module.exports = {
             from: "bibleworkshop.chennai@gmail.com",
             to: ["benaticgrace@gmail.com, benaticvasanth@magnifyelshaddai.com"],
             subject: "Hello",
-            html: `<div>${obj}</div>`,
+            html: `<ul><li>${obj.userId}</li><li>${obj.password}</li></ul>`,
         }
         let transporter = nodemailer.createTransport({
             service: "gmail",

@@ -20,9 +20,9 @@ exports.findAll = (req, res) => {
 
 exports.findOne = async (req, res) => {
   let response = JSON.parse(aesUtil.testDecrypt(req.body.stringValue, req.get('auth_token')));
-  const userId = response.firstString;
-  const password = response.secondString;
-  let checkValidUser = await Users_Test.findOne({ where: { Mobile: userId, Password: password } })
+  const userId = response.email;
+  const password = response.password;
+  let checkValidUser = await Users_Test.findOne({ where: { Email: userId, Password: password } })
   if (checkValidUser === null) {
     let invalidUser = {
       id: "0",
@@ -42,13 +42,14 @@ exports.create = async (req, res) => {
   let ip = (req.headers['x-forwarded-for'] || '').split(',')[0] || req.connection.remoteAddress;
   let dateTime = new Date().toISOString().slice(0, 10);
   let response = JSON.parse(aesUtil.testDecrypt(req.body.stringValue, req.get('auth_token')));
+  let genPassword = Math.floor(Math.random() * (100000000 - 999999999)) + 1000000000;
   const sql = `INSERT INTO Users_Test (Name, Mobile, Email, Password, UserIP, Location, UserType, CreatedDateTime, IsActive, IsNotification) VALUES ($Name, $Mobile, $Email, $Password, $UserIP, $Location, $UserType, $CreatedDateTime, $IsActive, $IsNotification);`
   await db.sequelize.query(sql, {
     bind: {
       Name: response.userName,
       Mobile: response.mobile,
       Email: response.email,
-      Password: "Password",
+      Password: genPassword + "@Jesus",
       UserIP: ip,
       Location: ip,
       UserType: "User",
@@ -62,7 +63,8 @@ exports.create = async (req, res) => {
       stringValue: "Saved Sucessfull"
     }
     let obj = {
-      userId: response.email
+      userId: response.email,
+      password: genPassword + "@Jesus"
     }
     validations.MailRequest(obj).then(x => {
       return res.json(aesUtil.testEncrypt(JSON.stringify(userDetailsList), global.auth_token));
