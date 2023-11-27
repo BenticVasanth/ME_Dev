@@ -57,7 +57,6 @@ exports.create = async (req, res) => {
       IsNotification: response.notificationStatus
     },
   }, { type: sequelize.QueryTypes.INSERT }).then(data => {
-    console.log(data);
     let userDetailsList = {
       id: "1",
       stringValue: "Saved Sucessfull"
@@ -65,10 +64,11 @@ exports.create = async (req, res) => {
     let obj = {
       userId: response.email
     }
-
-    validations.MailRequest(obj, res);
-    console.log(data);
-    return res.json(aesUtil.testEncrypt(JSON.stringify(userDetailsList), global.auth_token));
+    validations.MailRequest(obj).then(x => {
+      return res.json(aesUtil.testEncrypt(JSON.stringify(userDetailsList), global.auth_token));
+    }).catch(err => {
+      return res.json(aesUtil.testEncrypt(JSON.stringify(err), global.auth_token));
+    })
 
 
   }).catch(err => {

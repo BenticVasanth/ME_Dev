@@ -1,13 +1,11 @@
 /*eslint-disable */
 const nodemailer = require('nodemailer');
 module.exports = {
-    MailRequest(obj, res) {
-        console.log('MailRequest')
+    async MailRequest(obj) {
         let mailOptions = {
             from: "bibleworkshop.chennai@gmail.com",
             to: ["benaticgrace@gmail.com, benaticvasanth@magnifyelshaddai.com"],
             subject: "Hello",
-            text: obj,
             html: `<div>${obj}</div>`,
         }
         let transporter = nodemailer.createTransport({
@@ -20,7 +18,12 @@ module.exports = {
                 pass: "rvib iiqr syqq zjsx",
             },
         });
-        transporter.sendMail(mailOptions);
+        await transporter.sendMail(mailOptions, (err, result) => {
+            if (err) {
+                return false
+            }
+            return true
+        })
     },
 
     IsNotNumberfield(modelVal) {
