@@ -1,0 +1,26 @@
+// :root{
+
+// }
+
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+
+.footer {
+    background-color: #1e1c18;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    .footer-block {
+        background-color: #282725;
+        padding: 40px 40px 10px 40px;
+        border-radius: 10px;
+    }
+    .copyright-content {
+        padding: 12px;
+        color: rgb(253,187,21,0.7);
+    }
+}

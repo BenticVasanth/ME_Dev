@@ -4,8 +4,10 @@ import WelcomeDashboard from "@/components/WelcomeDashboard";
 import Home from "@/components/Home";
 import Register from "@/components/Register";
 import DashboardPage from "@/components/Dashboard";
+import Footer from "@/components/Footer"
+import Login from "@/components/Login"
 
-import services from "@/services/service";
+// import services from "@/services/service";
 
 const routes = [{
   path: "/welcomeDashboard/",
@@ -26,6 +28,16 @@ const routes = [{
   path: "/register",
   name: "register",
   component: Register,
+},
+{
+  path:"/login",
+  name:"login",
+  components:Login
+},
+{
+  path:"/footer",
+  name:"footer",
+  component:Footer
 }
 ];
 
@@ -35,8 +47,8 @@ const router = createRouter({
 });
 
 router.beforeEach((to, from, next) => {
-  services.checkserver();
-  const publicPages = ['/', '/register'];
+  // services.checkserver();
+  const publicPages = ['/', '/register','/login','/footer'];
   const authRequired = !publicPages.includes(to.path);
   // const loggedIn = $global.$store.secureToken;
   if (authRequired) {

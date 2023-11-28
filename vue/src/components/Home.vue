@@ -5,11 +5,19 @@
             <b-nav-item v-for="(menu, index) in menuList" :key="index" @click="pageRouting(menu.router)">{{menu.name}}</b-nav-item>
         </b-navbar-nav>
     </b-navbar>
+    <Footer></Footer>
+        <Login></Login>
+
 </div>
 </template>
 
 <script>
+import Footer from "@/components/Footer"
+import Login from "@/components/Login"
 export default {
+    components: {
+        Footer,Login
+    },
     data() {
         return {
             menuList: [{
@@ -22,7 +30,6 @@ export default {
         }
     },
     name: 'HomePage',
-    components: {},
     methods: {
         pageRouting(routerName) {
             // this.$router.push(routerName)
