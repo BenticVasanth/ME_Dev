@@ -14,9 +14,6 @@
                 <label class="sr-only" for="inline-form-input-email">Email</label>
                 <b-form-input v-model="email" type="email" id="inline-form-input-email" class="mb-2 mr-sm-2 mb-sm-0" placeholder="Enter Email Id"></b-form-input>
 
-                <!-- <label class="sr-only" for="inline-form-input-password">Password</label>
-                <b-form-input v-model="password" type="password" id="inline-form-input-password" class="mb-2 mr-sm-2 mb-sm-0" placeholder="Enter Password"></b-form-input> -->
-            
                 <div class="form-check">
                     <input v-model="notificationStatus" class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                     <label class="form-check-label" for="defaultCheck1">
@@ -45,12 +42,11 @@ export default {
             userName: '',
             mobile: '',
             email: "",
-            // password: '',
             notificationStatus: true
         }
     },
     methods: {
-        clear(){
+        clear() {
             this.userName = "";
             this.mobile = "";
             this.email = "";
@@ -62,7 +58,6 @@ export default {
                 mobile: this.mobile,
                 email: this.email,
                 notificationStatus: this.notificationStatus
-                // secondString: this.password
             };
             var jsonFormdata = {
                 id: '',
@@ -75,9 +70,6 @@ export default {
             }).then(res => {
                 var base64StringValue = aesUtil.methods.testDecrypt(res.data, this.$store.tokenId);
                 // this.$store.tokenId = res.headers.auth_token;
-                // if (res.headers.mailsms_token) {
-                //     this.$commonstore.setStore('mailSmsToken', res.headers.mailsms_token);
-                // }
                 var jsonString = JSON.parse(base64StringValue);
                 if (jsonString.id == 0) {
                     // this.warnAlert(jsonString.stringValue, '', 'failure');
@@ -85,31 +77,10 @@ export default {
                 } else if (jsonString.id == 1) {
                     alert("Saved Successfully")
                     this.clear();
-                    // this.router.push({
-                    //     path: "/welcomeDashboard/dashboard"
-                    // });
                     // this.warnAlert(jsonString.stringValue, '', 'success')
-                    // return false
                 }
-
-                // this.$store.secureToken = jsonString.secureToken;
-                // this.$commonstore.setStore('userId', jsonString.userId);
-                // //orgList API call
-                // let userdata = {
-                //     userId: jsonString.userId,
-                //     userName: jsonString.userName
-                // }
-                // let datavalues = aesUtil.methods.commonEncrypt(this.$store.secureToken, JSON.stringify(userdata));
-                // this.$commonstore.setStore('data', datavalues);
-                // this.$commonstore.setStore('userSesId', jsonString.userSesId);
-                // this.$commonstore.setStore('userLevel', jsonString.userLevel);
-                // this.$commonstore.setStore('loginID', jsonString.loginId);
             })
         },
-    },
-    created() {
-        // this.service.checkserver();
     }
-
 }
 </script>

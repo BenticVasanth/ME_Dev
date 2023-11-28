@@ -51,9 +51,7 @@ export default {
             }).then(res => {
                 var base64StringValue = aesUtil.methods.testDecrypt(res.data, this.$store.tokenId);
                 // this.$store.tokenId = res.headers.auth_token;
-                // if (res.headers.mailsms_token) {
-                //     this.$commonstore.setStore('mailSmsToken', res.headers.mailsms_token);
-                // }
+
                 var jsonString = JSON.parse(base64StringValue);
                 if (jsonString.id == 0) {
                     alert(jsonString.stringValue)
@@ -64,7 +62,6 @@ export default {
                         path: "/welcomeDashboard/dashboard"
                     });
                     // this.warnAlert(jsonString.stringValue, '', 'success')
-                    // return false
                 }
 
                 // this.$store.secureToken = jsonString.secureToken;
@@ -81,10 +78,6 @@ export default {
                 // this.$commonstore.setStore('loginID', jsonString.loginId);
             })
         },
-    },
-    created() {
-        // this.service.checkserver();
     }
-
 }
 </script>
