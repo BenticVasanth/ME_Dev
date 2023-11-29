@@ -6,7 +6,25 @@
         </b-navbar-nav>
     </b-navbar>
     <Footer></Footer>
-        <Login></Login>
+    <div class="row p-4 m-0">
+        <div class="col-lg-4 col-md-12 col-sm-12">
+            <b-container>
+                <b-card>
+                    <img class="pr-2 w-100" src="@/assets/images/catholicTamilWebsiteAdvertisement.png" img-alt="Card image" />
+                </b-card>
+            </b-container>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12">
+            <Login></Login>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12">
+            <b-container>
+                <b-card>
+                    <img class="pr-2 w-100" src="@/assets/images/catholicTamilWebsiteAdvertisement.png" img-alt="Card image" />
+                </b-card>
+            </b-container>
+        </div>
+    </div>
 
 </div>
 </template>
@@ -16,7 +34,8 @@ import Footer from "@/components/Footer"
 import Login from "@/components/Login"
 export default {
     components: {
-        Footer,Login
+        Footer,
+        Login
     },
     data() {
         return {
