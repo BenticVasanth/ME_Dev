@@ -19,23 +19,45 @@ exports.findAll = (req, res) => {
 };
 
 exports.findOne = async (req, res) => {
-  let response = JSON.parse(aesUtil.testDecrypt(req.body.stringValue, req.get('auth_token')));
-  const userId = response.email;
-  const password = response.password;
-  let checkValidUser = await Users_Test.findOne({ where: { Email: userId, Password: password } })
-  if (checkValidUser === null) {
+  // let response = JSON.parse(aesUtil.testDecrypt(req.body.stringValue, req.get('auth_token')));
+  const userId = req.body.userId; // response.email;
+  const password = req.body.password; //response.password;
+  console.log(req.sessionID);
+  if (userId && password) {
+    console.log(req.session);
+    if (req.session.authenticated) {
+      console.log(req.session);
+    } else {
+      let checkValidUser = await Users_Test.findOne({ where: { Email: userId, Password: password } })
+      if (checkValidUser === null) {
+        let invalidUser = {
+          id: "0",
+          stringValue: "Invalid User"
+        }
+        // res.status(403).json(aesUtil.testEncrypt(JSON.stringify(invalidUser), global.auth_token));
+        res.status(403).json(invalidUser);
+      } else {
+        req.session.authenticated = true;
+        req.session.user = {
+          userId, password
+        }
+        let validUser = {
+          id: "1",
+          stringValue: "Valid User"
+        }
+        // res.status(200).json(aesUtil.testEncrypt(JSON.stringify(validUser), global.auth_token));
+        res.status(200).json(validUser);
+      }
+    }
+  } else {
     let invalidUser = {
       id: "0",
       stringValue: "Invalid User"
     }
-    res.json(aesUtil.testEncrypt(JSON.stringify(invalidUser), global.auth_token));
-  } else {
-    let validUser = {
-      id: "1",
-      stringValue: "Valid User"
-    }
-    res.json(aesUtil.testEncrypt(JSON.stringify(validUser), global.auth_token));
+    // res.status(403).json(aesUtil.testEncrypt(JSON.stringify(invalidUser), global.auth_token));
+    res.status(403).json(invalidUser);
   }
+
 };
 
 exports.create = async (req, res) => {
