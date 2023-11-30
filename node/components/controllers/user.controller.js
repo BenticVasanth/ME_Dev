@@ -19,50 +19,64 @@ exports.findAll = (req, res) => {
 };
 
 exports.findOne = async (req, res) => {
-  // let response = JSON.parse(aesUtil.testDecrypt(req.body.stringValue, req.get('auth_token')));
-  const userId = req.body.userId; // response.email;
-  const password = req.body.password; //response.password;
-  console.log(req.sessionID);
+  let response = JSON.parse(aesUtil.testDecrypt(req.body.stringValue, req.get('auth_token')));
+  const userId = response.email;
+  const password = response.password;
   if (userId && password) {
-    console.log(req.session);
-    if (req.session.authenticated) {
-      console.log(req.session);
+    let checkValidUser = await Users_Test.findOne({ where: { Email: userId, Password: password } })
+    if (checkValidUser === null) {
+      let invalidUser = {
+        id: "0",
+        stringValue: "Invalid User"
+      }
+      res.status(403).json(aesUtil.testEncrypt(JSON.stringify(invalidUser), global.auth_token));
     } else {
-      let checkValidUser = await Users_Test.findOne({ where: { Email: userId, Password: password } })
-      if (checkValidUser === null) {
-        let invalidUser = {
-          id: "0",
-          stringValue: "Invalid User"
-        }
-        // res.status(403).json(aesUtil.testEncrypt(JSON.stringify(invalidUser), global.auth_token));
-        res.status(403).json(invalidUser);
-      } else {
-        req.session.authenticated = true;
-        req.session.user = {
-          userId, password
-        }
+      let userDetails = {
+        UserId: userId,
+        Password: password
+      }
+
+      // Session Creation Start
+      let dateTime = new Date().toISOString().slice(0, 10) +' '+ new Date().toISOString().slice(12, 23);
+      let encryptUserData = (aesUtil.testEncrypt(JSON.stringify(userDetails), global.auth_token));
+      const sql = `INSERT INTO SessionDetails (SessionId, CreatedDateTime, UpdatedDateTime) VALUES ($SessionId, $CreatedDateTime, $UpdatedDateTime);`
+      await db.sequelize.query(sql, {
+        bind: {
+          SessionId: encryptUserData,
+          CreatedDateTime: dateTime,
+          UpdatedDateTime: dateTime,
+        },
+      }, { type: sequelize.QueryTypes.INSERT }).then(() => {
+        console.log("---Session Created---");
+        console.log(encryptUserData);
+        console.log("---------------------");
         let validUser = {
           id: "1",
-          stringValue: "Valid User"
+          stringValue: "Valid User",
+          sessionToken: encryptUserData
         }
-        // res.status(200).json(aesUtil.testEncrypt(JSON.stringify(validUser), global.auth_token));
-        res.status(200).json(validUser);
-      }
+        
+        res.status(200).json(aesUtil.testEncrypt(JSON.stringify(validUser), global.auth_token));
+      }).catch(err => {
+        return res.status(500).send({
+          message:
+            err.message || "Some error occurred while creating the Session."
+        });
+      });
+      // Session Creation End
     }
   } else {
     let invalidUser = {
       id: "0",
       stringValue: "Invalid User"
     }
-    // res.status(403).json(aesUtil.testEncrypt(JSON.stringify(invalidUser), global.auth_token));
-    res.status(403).json(invalidUser);
+    res.status(403).json(aesUtil.testEncrypt(JSON.stringify(invalidUser), global.auth_token));
   }
-
 };
 
 exports.create = async (req, res) => {
   let ip = (req.headers['x-forwarded-for'] || '').split(',')[0] || req.connection.remoteAddress;
-  let dateTime = new Date().toISOString().slice(0, 10);
+  let dateTime = new Date().toISOString().slice(0, 10) +' '+ new Date().toISOString().slice(12, 23);
   let response = JSON.parse(aesUtil.testDecrypt(req.body.stringValue, req.get('auth_token')));
   let genPassword = Math.floor(Math.random() * (100000000 - 999999999)) + 1000000000;
   const sql = `INSERT INTO Users_Test (Name, Mobile, Email, Password, UserIP, Location, UserType, CreatedDateTime, IsActive, IsNotification) VALUES ($Name, $Mobile, $Email, $Password, $UserIP, $Location, $UserType, $CreatedDateTime, $IsActive, $IsNotification);`
@@ -79,7 +93,7 @@ exports.create = async (req, res) => {
       IsActive: 1,
       IsNotification: response.notificationStatus
     },
-  }, { type: sequelize.QueryTypes.INSERT }).then(data => {
+  }, { type: sequelize.QueryTypes.INSERT }).then(() => {
     let userDetailsList = {
       id: "1",
       stringValue: "Saved Sucessfull"
@@ -93,8 +107,6 @@ exports.create = async (req, res) => {
     }).catch(err => {
       return res.json(aesUtil.testEncrypt(JSON.stringify(err), global.auth_token));
     })
-
-
   }).catch(err => {
     return res.status(500).send({
       message:

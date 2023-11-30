@@ -1,10 +1,6 @@
 const express = require("express");
 const cors = require("cors");
 const app = express();
-const session = require("express-session");
-const store = new session.MemoryStore();
-
-// const SequelizeStore = require("connect-session-sequelize")(session.Store);
 
 var corsOptions = {
   origin: "http://localhost:8080"
@@ -25,23 +21,6 @@ db.sequelize.sync();
 // db.sequelize.sync({ force: true }).then(() => {
 //   console.log("Drop and re-sync db.");
 // });
-// var myStore = new SequelizeStore({
-//   db: db.sequelize,
-//   expiration: 10000
-// });
-
-app.use(
-  session({
-    secret: "keyboard cat",
-    store: store,
-    saveUninitialized: true,
-    cookie: {
-      maxAge: 1000
-    },
-    resave: false, // we support the touch method so per the express-session docs this should be set to false
-    proxy: true, // if you do SSL outside of node.
-  })
-);
 
 // simple route
 app.get("/", (req, res) => {

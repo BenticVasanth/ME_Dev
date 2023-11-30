@@ -2,5 +2,7 @@
 	{"getServerStatus" : "login/getServerStatus"},
 	{"userList" : "login/userList"},
 	{"validUser" : "login/userList/validUser"},
-	{"addUser" : "login/userList/addUser"}
+	{"addUser" : "login/userList/addUser"},
+	{"sabbathDoc" : "api/sabbathDoc"},
+	{"bibleCommentaryDoc" : "api/bibleCommentaryDoc"}
 ]

@@ -2,17 +2,22 @@
 import axios from 'axios';
 import { $global } from '@/main.js'
 import aesUtil from '@/assets/js/aesUtil.js';
+var CryptoJS = require("crypto-js");
 
 class CommonService {
     async get(url) {
-        return await axios.get(`${url}`, {
+        let token = {
             headers: {
-                'auth_token': $global.$store.tokenId
+                'auth_token': $global.$store.tokenId,
+                'ses_token': $global.$store.sessionId
             }
-        }).then(response => {
-            this.nullToken(response);
-            this.tokenSet(response, `${url}`);
-            return response;
+        };
+        console.log(token);
+        return await axios.get(url, token).then(response => {
+            // this.nullToken(response);
+            this.tokenSet(response);
+            let hashJsonString = CryptoJS.AES.decrypt(response.data, $global.$store.tokenId).toString(CryptoJS.enc.Utf8);
+            return JSON.parse(hashJsonString);;
         }).catch((e) => {
             this.forCatch(e);
             return [];
@@ -79,13 +84,16 @@ class CommonService {
         return JSON.stringify(data);
     }
 
-    async tokenSet(response, url) {
+    async tokenSet(response) {
 
         if (response.headers.auth_token)
             $global.$store.tokenId = response.headers.auth_token;
 
         if (response.headers.mailsms_token)
             this.setStore('mailSmsToken', response.headers.mailsms_token);
+
+        if (response.headers.ses_token)
+            $global.$store.ses_token = response.headers.ses_token;
     }
 
     nullToken(response) {

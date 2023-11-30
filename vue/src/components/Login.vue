@@ -58,6 +58,7 @@ export default {
                     // this.warnAlert(jsonString.stringValue, '', 'failure');
                     return false;
                 } else if (jsonString.id == 1) {
+                    this.$store.sessionId = jsonString.sessionToken
                     this.router.push({
                         path: "/welcomeDashboard/dashboard"
                     });

@@ -18,6 +18,7 @@ db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
 db.users = require("./user.model.js")(sequelize, Sequelize);
+db.SessionDetails = require("./session.model.js")(sequelize, Sequelize);
 db.Documents = require("./sabbath.model.js")(sequelize, Sequelize);
 db.BibleCommentary = require("./bibleCommentary.model.js")(sequelize, Sequelize);
 

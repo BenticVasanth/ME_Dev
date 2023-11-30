@@ -3,6 +3,7 @@ export const useCommonStore = defineStore("commonstore", {
     state: () => ({
         tokenId: '',
         secureToken: '',
+        sessionId: '',
         dataValues: {
             secureToken: '',
             tokenId: '',
@@ -10,7 +11,7 @@ export const useCommonStore = defineStore("commonstore", {
             data: '',
             mailSmsToken: '',
             loginID: '',
-            userId: '',
+            userId: ''
         },
         Commondata: ''
     }),
