@@ -6,7 +6,7 @@ import Register from "@/components/Register";
 import DashboardPage from "@/components/Dashboard";
 import Footer from "@/components/Footer"
 import Login from "@/components/Login"
-
+import TopBar from "@/components/TopBar"
 // import services from "@/services/service";
 
 const routes = [{
@@ -23,6 +23,11 @@ const routes = [{
   path: "/",
   name: "Home",
   component: Home
+},
+{
+  path:"/TopBar",
+  name:"TopBar",
+  component:TopBar
 },
 {
   path: "/register",
@@ -48,7 +53,7 @@ const router = createRouter({
 
 router.beforeEach((to, from, next) => {
   // services.checkserver();
-  const publicPages = ['/', '/register','/login','/footer'];
+  const publicPages = ['/', '/register','/login','/TopBar','/footer'];
   const authRequired = !publicPages.includes(to.path);
   // const loggedIn = $global.$store.secureToken;
   if (authRequired) {
