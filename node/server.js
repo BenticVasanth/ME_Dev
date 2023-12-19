@@ -33,6 +33,7 @@ require("./components/routes/bibleCommentary.routes")(app);
 
 // Global Variable
 global.auth_token = "global_auth_token";
+global.totalSessionTime = 60000;
 
 // set port, listen for requests
 const PORT = process.env.PORT || 8081;

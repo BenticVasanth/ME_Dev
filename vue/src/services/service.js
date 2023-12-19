@@ -135,7 +135,7 @@ class CommonService {
         }
     }
     forCatch(e) {
-        this.setStore('pageloading', false);
+        console.log(e.response);
         if (e.response.data == 'Session is Invalid' || e.response.data == 'Invalid request' || e.response.data == 'Your account is logged in on another system. Please login again to proceed.') {
             $global.CommomnJs.methods.warnAlert('Failed', e.response.data, 'failure').then((value) => {
                 if (value) {

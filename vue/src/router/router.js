@@ -1,5 +1,5 @@
 import { createWebHashHistory, createRouter } from "vue-router";
-// import { $global } from '@/main.js'
+import { $global } from '@/main.js'
 import WelcomeDashboard from "@/components/WelcomeDashboard";
 import Home from "@/components/Home";
 import Register from "@/components/Register";
@@ -41,9 +41,9 @@ const router = createRouter({
 
 router.beforeEach((to, from, next) => {
   services.checkserver();
-  const publicPages = ['/', '/register'];
+  const publicPages = ['/', '/register', '/login'];
   const authRequired = !publicPages.includes(to.path);
-  const loggedIn = "$global.$store.secureToken";
+  const loggedIn = $global.$store.sessionId;
   if (authRequired && !loggedIn) {
     next('/');
   } else {
