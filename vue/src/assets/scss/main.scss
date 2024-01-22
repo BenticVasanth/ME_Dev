@@ -14,6 +14,7 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
     width: 100%;
+    border-bottom: 3px solid #eccf63;
 }
 .img-cont {
     position: relative;
@@ -62,6 +63,47 @@ body {
         padding: 12px;
         color: rgb(253, 187, 21, 0.7);
     }
+}
+.userheader {
+    .navbar-brand {
+        margin-right: 0px !important;
+    }
+    button {
+        outline: none !important;
+        box-shadow: none !important;
+        font-size: 14px;
+        margin: 20px;
+        border-radius: 20px;
+    }
+
+    .dropdown-menu {
+        width: 100%;
+        li {
+            padding: 2px;
+        }
+    }
+    .dropdown-item {
+        font-size: 14px;
+
+        img {
+            padding-right: 10px;
+        }
+    }
+}
+.b-sidebar {
+    top: 7.1rem !important;
+    width: 20% !important;
+    position: inherit !important;
+    float: left !important;
+    height: 100vh !important;
+
+}
+.cardcontent{
+    width: 75% !important;
+    left: 22%;
+    top: 15%;
+    position: fixed;
+    height: calc(100vh - 70px) !important;
 }
 
 @media only screen and (max-width: 480px){

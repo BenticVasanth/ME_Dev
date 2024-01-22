@@ -1,36 +1,44 @@
 <template>
 <div>
-    <Home />
+    <TopBar></TopBar>
     <b-container>
-        <b-card title="Login">
-            <b-form inline class="justify-content-center">
-                <label class="sr-only" for="inline-form-input-name">User Name</label>
-                <b-form-input v-model="userName" id="inline-form-input-name" class="mb-2 mr-sm-2 mb-sm-0" placeholder="Enter User Name"></b-form-input>
-
-                <label class="sr-only" for="inline-form-input-password">Password</label>
-                <b-form-input v-model="password" type="password" id="inline-form-input-password" class="mb-2 mr-sm-2 mb-sm-0" placeholder="Enter Password"></b-form-input>
-
-                <b-button @click="login" variant="primary">Login</b-button>
-            </b-form>
-        </b-card>
+        <b-row>
+            <b-col md="12" offset-md="3" lg="6" sm="12" cols="12">
+                <h5 class="text-center font-weight-bold m-3">Create An Account</h5>
+                <b-card class="text-center rounded border m-2" bg-variant="" text-variant="white">
+                    <b-form class="p-4">
+                        <b-form-group>
+                            <b-form-input type="text" id="input-1" placeholder="Enter Name" required></b-form-input>
+                        </b-form-group>
+                        <b-form-group>
+                            <b-form-input type="number" id="input-2" placeholder="Enter Mobile Number" required></b-form-input>
+                        </b-form-group>
+                        <b-form-group>
+                            <b-form-input type="email" id="input-3" placeholder="Enter Email" required></b-form-input>
+                        </b-form-group>
+                            <b-form-checkbox v-model="checked" class="text-dark text-left">Click for Email Notification</b-form-checkbox>
+                        <b-button block pill variant="primary" class="mt-3">CREATE ACCOUNT</b-button>
+                    </b-form>
+                </b-card>
+            </b-col>
+        </b-row>
     </b-container>
 </div>
 </template>
 
 <script>
 /* eslint-disable */
-import Home from '@/components/Home'
+import TopBar from '@/components/TopBar'
 import aesUtil from '@/assets/js/aesUtil.js';
 import axios from 'axios';
 export default {
-    name: "LoginPage",
     components: {
-        Home
+        TopBar
     },
     data() {
         return {
-            userName: '',
-            password: ''
+           checked: true,
+           
         }
     },
     methods: {

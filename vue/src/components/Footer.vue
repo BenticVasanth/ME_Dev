@@ -21,7 +21,6 @@
                 </p><br/>
                 <p class="text-center copyright-content">DESIGNED & MAINTAINED BY BIBLE WORKSHOP TEAM © 2021. ALL RIGHTS RESERVED.</p>
             </b-card>
-
         </b-col>
     </b-row>
 </b-container>

@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { createWebHashHistory, createRouter } from "vue-router";
 // import { $global } from '@/main.js'
 import WelcomeDashboard from "@/components/WelcomeDashboard";
@@ -7,9 +8,12 @@ import DashboardPage from "@/components/Dashboard";
 import Footer from "@/components/Footer"
 import Login from "@/components/Login"
 import TopBar from "@/components/TopBar"
+import ForgetPassword from "@/components/ForgetPassword"
+import ChangePassword  from "@/components/ChangePassword"
 // import services from "@/services/service";
 
-const routes = [{
+const routes = [
+  {
   path: "/welcomeDashboard/",
   name: "WelcomeDashboard",
   component: WelcomeDashboard,
@@ -40,9 +44,19 @@ const routes = [{
   components:Login
 },
 {
+  path:"/forgetpassword",
+  name:"ForgetPassword",
+  component:ForgetPassword
+},
+{
   path:"/footer",
   name:"footer",
   component:Footer
+},
+{
+  path:"/changepassword",
+  name:"ChangePassword ",
+  component:ChangePassword 
 }
 ];
 
@@ -53,11 +67,11 @@ const router = createRouter({
 
 router.beforeEach((to, from, next) => {
   // services.checkserver();
-  const publicPages = ['/', '/register','/login','/TopBar','/footer'];
+  const publicPages = ['/', '/register','/forgetpassword','/changepassword'];
   const authRequired = !publicPages.includes(to.path);
-  // const loggedIn = $global.$store.secureToken;
-  if (authRequired) {
-    next();
+  const loggedIn = "$global.$store.secureToken";
+  if (authRequired && !loggedIn) {
+    next('/');
   } else {
     if (to.path == '/welcomeDashboard/' || to.path == '/welcomeDashboard') {
       next({

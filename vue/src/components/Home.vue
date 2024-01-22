@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="homePage">
     <TopBar></TopBar>
 
     <div class="img-cont">
@@ -14,9 +14,9 @@
     </div>
 
     <div class="row p-4 m-0">
-        <div class="col-lg-4 col-md-12 col-sm-12">
+        <div class="col-lg-4 col-md-12 col-sm-12 ">
             <b-container>
-                <b-card>
+                <b-card class="m-2">
                     <img class="pr-2 w-100" src="@/assets/images/catholicTamilWebsiteAdvertisement.png" img-alt="Card image" />
                 </b-card>
             </b-container>
@@ -26,7 +26,7 @@
         </div>
         <div class="col-lg-4 col-md-12 col-sm-12">
             <b-container>
-                <b-card>
+                <b-card class="m-2">
                     <img class="pr-2 w-100" src="@/assets/images/catholicTamilWebsiteAdvertisement.png" img-alt="Card image" />
                 </b-card>
             </b-container>
@@ -81,9 +81,13 @@ export default {
 
         }
     },
-    name: 'HomePage',
     methods: {
 
     }
 }
 </script>
+<style lang="scss" scoped>
+.homePage .headerNav {
+    border-bottom: 0px solid #eccf63;
+}
+</style>
