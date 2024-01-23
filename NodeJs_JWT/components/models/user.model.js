@@ -1,7 +1,7 @@
 module.exports = (sequelize, DataTypes) => {
   const User = sequelize.define("Users_Test", {
     id: {
-      field:"UserId",
+      field: "UserId",
       type: DataTypes.INTEGER,
       autoIncrement: true,
       primaryKey: true
@@ -28,7 +28,7 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING
     },
     createdAt: {
-      field:"CreatedDateTime",
+      field: "CreatedDateTime",
       type: DataTypes.DATE
     },
     IsActive: {
@@ -37,6 +37,10 @@ module.exports = (sequelize, DataTypes) => {
     IsNotification: {
       type: DataTypes.BOOLEAN
     }
+  }, {
+    freezeTableName: true,
+    createdAt: false,
+    updatedAt: false
   });
 
   return User;

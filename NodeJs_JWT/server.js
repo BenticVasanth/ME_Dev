@@ -1,11 +1,9 @@
 const express = require("express");
 const cors = require("cors");
 const app = express();
-const config = require("./components/config/auth.config");
-var jwt = require("jsonwebtoken");
 
 var corsOptions = {
-  origin: "http://localhost:8083"
+  origin: "*"
 };
 
 app.use(cors(corsOptions));
@@ -39,9 +37,7 @@ require('./components/routes/user.routes')(app);
 const PORT = process.env.PORT || 8081;
 app.listen(PORT, () => {
   app.get("/login/getServerStatus", async (req, res) => {
-    await res.status(200).json({
-      data: "Server Up"
-    });
+    await res.status(200).json("Server Up");
   });
   console.log(`Server is running on port ${PORT}.`);
 });

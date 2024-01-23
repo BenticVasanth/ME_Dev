@@ -1,10 +1,7 @@
 const db = require("../models");
-const config = require("../config/auth.config");
-const authJwt = require("../middleware/authJwt");
 const User = db.user;
-
-var jwt = require("jsonwebtoken");
-var bcrypt = require("bcryptjs");
+const authJwt = require("../middleware/authJwt");
+const aesUtil = require("../../assets/js/aesUtil");
 
 exports.signup = (req, res) => {
   let ip = (req.headers['x-forwarded-for'] || '').split(',')[0] || req.connection.remoteAddress;
@@ -21,7 +18,6 @@ exports.signup = (req, res) => {
     CreatedDateTime: '',
     IsActive: 1,
     IsNotification: req.body.notificationStatus
-    // password: bcrypt.hashSync(req.body.password, 8)
   })
     .then(() => {
       let userDetailsList = {
@@ -40,37 +36,74 @@ exports.signup = (req, res) => {
     });
 };
 
-exports.signin = (req, res) => {
-  User.findOne({
-    where: {
-      Email: req.body.email
-    }
-  })
-    .then(user => {
-      if (!user) {
-        return res.status(404).send({ message: "User Not found." });
+// exports.signin = (req, res) => {
+//   User.findOne({
+//     where: {
+//       Email: req.body.email,
+//       Password: req.body.password
+//     }
+//   })
+//     .then(user => {
+//       if (!user) {
+//         return res.status(404).send({ message: "User Not found." });
+//       }
+
+//       var passwordIsValid = req.body.password;
+
+//       if (!passwordIsValid) {
+//         return res.status(401).send({
+//           accessToken: null,
+//           message: "Invalid Password!"
+//         });
+//       }
+
+//       authJwt.setToken(user.id);
+
+//       let validUser = {
+//         id: "1",
+//         stringValue: "Valid User",
+//         auth_token: global.auth_token
+//       }
+//       res.status(200).json(validUser);
+//     })
+//     .catch(err => {
+//       res.status(500).send({ message: err.message });
+//     });
+// };
+
+exports.signin = async (req, res) => {
+  const userId = req.body.email;
+  const password = req.body.password;
+
+  if (userId && password) {
+    let checkValidUser = await User.findOne({ where: { Email: userId, Password: password } })
+    if (checkValidUser === null) {
+      let invalidUser = {
+        id: "0",
+        stringValue: "Invalid User"
       }
-
-      var passwordIsValid = req.body.password;
-      // var passwordIsValid = bcrypt.compareSync(req.body.password, user.password);
-
-      if (!passwordIsValid) {
-        return res.status(401).send({
-          accessToken: null,
-          message: "Invalid Password!"
-        });
+      return res.status(403).json(JSON.stringify(invalidUser));
+      // return res.status(403).json(aesUtil.testEncrypt(JSON.stringify(invalidUser), global.auth_token));
+    } else {
+      let userDetails = {
+        UserId: userId,
+        Password: password
       }
-
-      authJwt.setToken(user.id);
-
+      authJwt.setToken(JSON.stringify(userDetails));
+      let encryptUserData = (aesUtil.testEncrypt(JSON.stringify(userDetails), global.auth_token));
       let validUser = {
         id: "1",
         stringValue: "Valid User",
-        auth_token: global.auth_token
+        authToken: encryptUserData
       }
-      res.status(200).json(validUser);
-    })
-    .catch(err => {
-      res.status(500).send({ message: err.message });
-    });
+      // return res.status(200).json(JSON.stringify(validUser));
+      return res.status(200).json(aesUtil.testEncrypt(JSON.stringify(validUser), global.auth_token));
+    }
+  } else {
+    let invalidUser = {
+      id: "0",
+      stringValue: "Invalid User"
+    }
+    return res.status(403).json(aesUtil.testEncrypt(JSON.stringify(invalidUser), global.auth_token));
+  }
 };
