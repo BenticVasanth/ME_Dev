@@ -30,8 +30,8 @@ export default {
     },
     data() {
         return {
-            email: "",
-            password: ''
+            email: "mathewvinoth1989@gmail.com",
+            password: 'avemaria'
         }
     },
     methods: {
@@ -40,25 +40,16 @@ export default {
                 email: this.email,
                 password: this.password
             };
-            var jsonFormdata = {
-                id: '',
-                stringValue: aesUtil.methods.testEncrypt(JSON.stringify(formData), this.$store.tokenId)
-            };
-            axios.post(this.$validUser, jsonFormdata, {
-                headers: {
-                    'auth_token': this.$store.tokenId
-                }
-            }).then(res => {
-                var base64StringValue = aesUtil.methods.testDecrypt(res.data, this.$store.tokenId);
-                // this.$store.tokenId = res.headers.auth_token;
-
+            axios.post(this.$signin, formData).then(res => {
+                var base64StringValue = aesUtil.methods.testDecrypt(res.data, res.headers.auth_token);
+                this.$store.tokenId = res.headers.auth_token;
                 var jsonString = JSON.parse(base64StringValue);
                 if (jsonString.id == 0) {
                     alert(jsonString.stringValue)
                     // this.warnAlert(jsonString.stringValue, '', 'failure');
                     return false;
                 } else if (jsonString.id == 1) {
-                    this.$store.sessionId = jsonString.sessionToken
+                    this.$store.sessionId = jsonString.authToken
                     this.router.push({
                         path: "/welcomeDashboard/dashboard"
                     });

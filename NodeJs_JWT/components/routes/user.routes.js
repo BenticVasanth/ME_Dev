@@ -1,8 +1,11 @@
 const { authJwt } = require("../middleware");
-const controller = require("../controllers/user.controller");
+const userController = require("../controllers/user.controller");
 
 module.exports = function (app) {
+  console.log('user.routes');
   app.use(function (req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
     res.header(
       "Access-Control-Allow-Headers",
       "auth_token, Origin, Content-Type, Accept"
@@ -10,23 +13,15 @@ module.exports = function (app) {
     next();
   });
 
-  app.get("/api/test/all", controller.allAccess);
+  // Create a new Users
+  // app.post("/api/addUser", userController.create);
 
-  app.get(
-    "/api/sabbathDoc",
-    [authJwt.verifyToken],
-    controller.userBoard
-  );
+  // Retrieve all Users
+  app.get("/api/userList", [authJwt.verifyToken], userController.findAll);
 
-  app.get(
-    "/api/userList",
-    [authJwt.verifyToken],
-    controller.userListBoard
-  );
+  // Retrieve a single Users with id
+  // app.post("/api/validUser", [authJwt.verifyToken], userController.findOne);
 
-  app.get(
-    "/api/userRoles",
-    [authJwt.verifyToken],
-    controller.userRolesBoard
-  );
+  // // Delete a Single User (Logout)
+  // app.post("/api/logout", [authJwt.verifyToken], userController.delete);
 };

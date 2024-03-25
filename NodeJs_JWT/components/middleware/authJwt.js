@@ -1,31 +1,26 @@
 const jwt = require("jsonwebtoken");
 const config = require("../config/auth.config.js");
 const db = require("../models");
-const User = db.user;
+const User = db.userModal;
 
 verifyToken = (req, res, next) => {
+  console.log('verifyToken');
 
   let oldToken = req.headers.auth_token;
   if (!oldToken) {
-    return res.status(403).send({
-      message: "No token provided!"
-    });
+    return res.status(403).send("No token provided!");
   }
 
   let sessionTime = verifySessionTime(oldToken);
 
   if (sessionTime) {
-    res.status(403).send({
-      message: 'Session expired'
-    });
+    res.status(403).send('Session expired');
   } else {
     jwt.verify(oldToken,
       config.secret,
       (err, decoded) => {
         if (err) {
-          return res.status(401).send({
-            message: "Unauthorized!",
-          });
+          return res.status(401).send("Unauthorized!");
         }
         console.log(decoded);
         let newToken = setToken(decoded.id);

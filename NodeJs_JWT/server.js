@@ -3,7 +3,8 @@ const cors = require("cors");
 const app = express();
 
 var corsOptions = {
-  origin: "*"
+  origin: "*",
+  exposedHeaders: "auth_token"
 };
 
 app.use(cors(corsOptions));

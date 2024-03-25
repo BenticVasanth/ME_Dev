@@ -1,7 +1,7 @@
 [
 	{"getServerStatus" : "login/getServerStatus"},
-	{"userList" : "login/userList"},
-	{"validUser" : "login/validUser"},
+	{"userList" : "api/userList"},
+	{"signin" : "login/signin"},
 	{"addUser" : "login/addUser"},
 	{"logout" : "login/logout"},
 	{"sabbathDoc" : "api/sabbathDoc"},

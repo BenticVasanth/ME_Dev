@@ -29,7 +29,7 @@ export { $global }
 
 let endPointObj = require("./services/commonEndPoint.json");
 
-var protocol = "https:" == document.location.protocol ? "https://" : "http://";
+var protocol = ("https:" == document.location.protocol) ? "https://" : "http://";
 $global.$urlLink = protocol + $global.$ipAddress + "/";
 // $global.$urlLink = protocol + $global.$ipAddress + "/" + $global.$warName;
 endPointObj.map((obj) => createUrl(obj));

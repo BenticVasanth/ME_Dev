@@ -26,9 +26,7 @@ const db = {};
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
-db.user = require("../models/user.model.js")(sequelize, Sequelize);
-db.userList = require("../models/userList.model.js")(sequelize, Sequelize);
-db.userRoles = require("../models/userRoles.model.js")(sequelize, Sequelize);
-// db.Documents = require("../models/sabbath.model.js")(sequelize, Sequelize);
+db.userModal = require("./user.model.js")(sequelize, Sequelize);
+db.sabbathModal = require("./sabbath.model.js")(sequelize, Sequelize);
 
 module.exports = db;

@@ -12,9 +12,8 @@ class CommonService {
                 'ses_token': $global.$store.sessionId
             }
         };
-        console.log(token);
         return await axios.get(url, token).then(response => {
-            // this.nullToken(response);
+            this.nullToken(response);
             this.tokenSet(response);
             let hashJsonString = CryptoJS.AES.decrypt(response.data, $global.$store.tokenId).toString(CryptoJS.enc.Utf8);
             return JSON.parse(hashJsonString);;
@@ -135,8 +134,7 @@ class CommonService {
         }
     }
     forCatch(e) {
-        console.log(e.response);
-        if (e.response.data == 'Session is Invalid' || e.response.data == 'Invalid request' || e.response.data == 'Your account is logged in on another system. Please login again to proceed.') {
+        if (e.response.data == 'Session expired' || e.response.data == 'Invalid request' || e.response.data == 'Your account is logged in on another system. Please login again to proceed.') {
             $global.CommomnJs.methods.warnAlert('Failed', e.response.data, 'failure').then((value) => {
                 if (value) {
                     $global.$store.$reset()
@@ -150,19 +148,17 @@ class CommonService {
             let serviceName = url.substring(url.lastIndexOf('/') + 1, url.length);
             $global.CommomnJs.methods.warnAlert('Failed', 'HTTP code : ' + e.response.status + ', Service Name : ' + serviceName + ', Something went wrong.', 'failure');
         } else {
-            $global.CommomnJs.methods.warnAlert('Failed', e.message, 'failure');
+            $global.CommomnJs.methods.warnAlert('Failed', e.response.message, 'failure');
         }
     }
 
-    checkserver() {
-        return axios.get($global.$getServerStatus).then(res => {
-            let serverStat = res.data.data;
-            $global.$store.tokenId = res.data.headers.auth_token;
-            if (serverStat != "Server Up") {
-                alert('ServerDown')
-            }
-            return serverStat;
-        });
+    async checkserver() {
+        const res = await axios.get($global.$getServerStatus);
+        let serverStat = res.data;
+        if (serverStat != "Server Up") {
+            alert('ServerDown');
+        }
+        return serverStat;
     }
 
     get_userid() {

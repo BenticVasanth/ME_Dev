@@ -21,6 +21,11 @@ export default {
         }
     },
     methods: {
+        userList() {
+            this.service.get(this.$userList).then(res => {
+                this.sabbathDocList = res;
+            })
+        },
         sabbathDayDoc() {
             this.service.get(this.$sabbathDoc).then(res => {
                 this.sabbathDocList = res;
@@ -62,7 +67,7 @@ export default {
         }
     },
     created() {
-        this.sabbathDayDoc();
+        this.userList();
     }
 }
 </script>

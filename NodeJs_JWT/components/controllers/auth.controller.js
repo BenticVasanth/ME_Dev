@@ -1,5 +1,5 @@
 const db = require("../models");
-const User = db.user;
+const User = db.userModal;
 const authJwt = require("../middleware/authJwt");
 const aesUtil = require("../../assets/js/aesUtil");
 
@@ -97,6 +97,7 @@ exports.signin = async (req, res) => {
         authToken: encryptUserData
       }
       // return res.status(200).json(JSON.stringify(validUser));
+      res.setHeader('auth_token', global.auth_token);
       return res.status(200).json(aesUtil.testEncrypt(JSON.stringify(validUser), global.auth_token));
     }
   } else {

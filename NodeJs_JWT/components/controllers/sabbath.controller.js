@@ -1,13 +1,12 @@
 const db = require("../models");
-const userModal = db.userModal;
+const sabbathModal = db.sabbathModal;
 const aesUtil = require("../../assets/js/aesUtil");
 
-// Retrieve all User List from the database.
+// Retrieve all Sabbath Doc from the database.
 exports.findAll = (req, res) => {
-  console.log('findAll');
-  userModal.findAll()
+    sabbathModal.findAll()
     .then(data => {
-      res.setHeader('auth_token', global.auth_token);
+      console.log(data);
       res.status(200).json(aesUtil.testEncrypt(JSON.stringify(data), global.auth_token));
     })
     .catch(err => {
