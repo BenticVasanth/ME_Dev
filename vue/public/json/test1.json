@@ -1,0 +1,106 @@
+{
+  "objectOne": [
+    {
+      "objectOne": "Description",
+      "objectTwo": [
+        {
+          "bidderName": "Bidder2",
+          "exceptValue": "Yes",
+          "bidderValue": "Yes",
+          "scoreForParticular": "undefined"
+        },
+        {
+          "bidderName": "Bidder2",
+          "exceptValue": "Yes",
+          "bidderValue": "Yes",
+          "scoreForParticular": "undefined"
+        },
+        {
+          "bidderName": "Bidder2",
+          "exceptValue": "Yes",
+          "bidderValue": "Yes",
+          "scoreForParticular": "undefined"
+        }
+      ]
+    },
+    {
+      "objectOne": "Description 1",
+      "objectTwo": [
+        {
+          "bidderName": "Bidder2",
+          "exceptValue": "Yes",
+          "bidderValue": "Yes",
+          "scoreForParticular": "undefined"
+        },
+        {
+          "bidderName": "Bidder2",
+          "exceptValue": "Yes",
+          "bidderValue": "Yes",
+          "scoreForParticular": "undefined"
+        }
+      ]
+    },
+    {
+      "objectOne": "Description 2",
+      "objectTwo": [
+        {
+          "bidderName": "Bidder2",
+          "exceptValue": "Yes",
+          "bidderValue": "Yes",
+          "scoreForParticular": "undefined"
+        }
+      ]
+    },
+    {
+      "objectOne": "Particulars",
+      "objectTwo": [
+        {
+          "bidderName": "Bidder2",
+          "exceptValue": "Yes",
+          "bidderValue": "Yes",
+          "scoreForParticular": "undefined"
+        },
+        {
+          "bidderName": "Bidder2",
+          "exceptValue": "Yes",
+          "bidderValue": "Yes",
+          "scoreForParticular": "undefined"
+        },
+        {
+          "bidderName": "Bidder2",
+          "exceptValue": "Yes",
+          "bidderValue": "Yes",
+          "scoreForParticular": "undefined"
+        }
+      ]
+    },
+    {
+      "objectOne": "Particulars 1",
+      "objectTwo": [
+        {
+          "bidderName": "Bidder2",
+          "exceptValue": "Yes",
+          "bidderValue": "Yes",
+          "scoreForParticular": "undefined"
+        },
+        {
+          "bidderName": "Bidder2",
+          "exceptValue": "Yes",
+          "bidderValue": "Yes",
+          "scoreForParticular": "undefined"
+        }
+      ]
+    },
+    {
+      "objectOne": "Particulars 1",
+      "objectTwo": [
+        {
+          "bidderName": "Bidder2",
+          "exceptValue": "Yes",
+          "bidderValue": "Yes",
+          "scoreForParticular": "undefined"
+        }
+      ]
+    }
+  ]
+}

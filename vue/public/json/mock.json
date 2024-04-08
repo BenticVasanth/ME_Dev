@@ -1,0 +1,2792 @@
+[
+  {
+    "orgId": null,
+    "secretariatDept": "Adi Dravidar and Tribal Welfare Department",
+    "requiredHeadOfficeEntity": "AD & TW - Secretariat",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": 1,
+    "level2Office": 2,
+    "onboardedDate": "14-05-2023"
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Adi Dravidar and Tribal Welfare Department",
+    "requiredHeadOfficeEntity": "Directorate of Adi Dravidar Welfare",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": 1,
+    "level2Office": 2,
+    "onboardedDate": "14-05-2023"
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Adi Dravidar and Tribal Welfare Department",
+    "requiredHeadOfficeEntity": "Directorate of Tribal Welfare",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": 1,
+    "level2Office": 2,
+    "onboardedDate": "14-05-2023"
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Adi Dravidar and Tribal Welfare Department",
+    "requiredHeadOfficeEntity": "TN State Commission for the SC & STs",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": 1,
+    "level2Office": 2,
+    "onboardedDate": "14-05-2023"
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Adi Dravidar and Tribal Welfare Department",
+    "requiredHeadOfficeEntity": "TN Adi Dravidar Housing and Development Corporation Limited - TAHDCO",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": 1,
+    "level2Office": 2,
+    "onboardedDate": "14-05-2023"
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Administration of Justice",
+    "requiredHeadOfficeEntity": "Tamilnadu State Legal Services Authority",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": 1,
+    "level2Office": 2,
+    "onboardedDate": "14-05-2023"
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Agriculture ",
+    "requiredHeadOfficeEntity": "Agriculture - Secretariat",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Agriculture ",
+    "requiredHeadOfficeEntity": "Directorate of Agriculture",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": 1,
+    "level2Office": 2,
+    "onboardedDate": "14-05-2023"
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Agriculture ",
+    "requiredHeadOfficeEntity": "Directorate of Agricultural Marketing and Agri Business",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Agriculture ",
+    "requiredHeadOfficeEntity": "Tamilnadu State Agricultural Marketing Board Chennai",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Agriculture ",
+    "requiredHeadOfficeEntity": "Tamil Nadu Food Processing and Agri Export Promotion Corporation",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Agriculture ",
+    "requiredHeadOfficeEntity": "Tamil Nadu Watershed Development Agency",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Agriculture ",
+    "requiredHeadOfficeEntity": "Directorate of Seed Certification",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Agriculture ",
+    "requiredHeadOfficeEntity": "Directorate of Horticulture and Plantation Crops",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Agriculture ",
+    "requiredHeadOfficeEntity": "Agricultural Engineering Department",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Agriculture ",
+    "requiredHeadOfficeEntity": "Agro Engineering Services",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Agriculture ",
+    "requiredHeadOfficeEntity": "Tamil Nadu Agricultural University, Coimbatore",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Agriculture ",
+    "requiredHeadOfficeEntity": "Directorate of Organic Certification",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Agriculture ",
+    "requiredHeadOfficeEntity": "Directorate of Sugar",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Agriculture ",
+    "requiredHeadOfficeEntity": "Tamil Nadu Horticulture Development Agency",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Agriculture ",
+    "requiredHeadOfficeEntity": "Tamil Nadu Sugar Corporation Limited",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Animal Husbandry, Dairying, Fisheries and Fishermen Welfare Department",
+    "requiredHeadOfficeEntity": "Animal Husbandry, Dairying and Fisheries-Secretariat",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Animal Husbandry, Dairying, Fisheries and Fishermen Welfare Department",
+    "requiredHeadOfficeEntity": "Directorate of Animal Husbandry",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Animal Husbandry, Dairying, Fisheries and Fishermen Welfare Department",
+    "requiredHeadOfficeEntity": "Tamil Nadu Veterinary and Animal Sciences University",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Animal Husbandry, Dairying, Fisheries and Fishermen Welfare Department",
+    "requiredHeadOfficeEntity": "Tamil Nadu Livestock Development Agency",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Animal Husbandry, Dairying, Fisheries and Fishermen Welfare Department",
+    "requiredHeadOfficeEntity": "Milk Production and Dairy Development",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Animal Husbandry, Dairying, Fisheries and Fishermen Welfare Department",
+    "requiredHeadOfficeEntity": "Directorate of Fisheries",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Animal Husbandry, Dairying, Fisheries and Fishermen Welfare Department",
+    "requiredHeadOfficeEntity": "Tamil Nadu Fisheries Development Corporation Ltd",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "BC, MBC & Minorities Welfare Department",
+    "requiredHeadOfficeEntity": "BC,MBC & MW-Secretariat",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "BC, MBC & Minorities Welfare Department",
+    "requiredHeadOfficeEntity": "Directorate of Backward Classes Welfare",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "BC, MBC & Minorities Welfare Department",
+    "requiredHeadOfficeEntity": "Directorate of Most Backward Classes & Denotified Communities Welfare",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "BC, MBC & Minorities Welfare Department",
+    "requiredHeadOfficeEntity": "Backward Classes Commission",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "BC, MBC & Minorities Welfare Department",
+    "requiredHeadOfficeEntity": "State Minorities Commission",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "BC, MBC & Minorities Welfare Department",
+    "requiredHeadOfficeEntity": "Minorities Welfare",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "BC, MBC & Minorities Welfare Department",
+    "requiredHeadOfficeEntity": "TN Waqf Tribunal",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "BC, MBC & Minorities Welfare Department",
+    "requiredHeadOfficeEntity": "Tamil Nadu Backward Classes Economic Development Corporation Limited",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "BC, MBC & Minorities Welfare Department",
+    "requiredHeadOfficeEntity": "Tamil Nadu Linguistic Minorities Social and Economic Development Corporation",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "BC, MBC & Minorities Welfare Department",
+    "requiredHeadOfficeEntity": "Tamil Nadu Minorities Economic Development Corporation Limited",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Commercial Taxes and Registration Department ",
+    "requiredHeadOfficeEntity": "Commercial Taxes and Registration-Secretariat",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Commercial Taxes and Registration Department - Commercial Taxes",
+    "requiredHeadOfficeEntity": "Commissionerate of Commercial Taxes",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Commercial Taxes and Registration Department - Commercial Taxes",
+    "requiredHeadOfficeEntity": "Sales Tax Appellate Tribunal",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Commercial Taxes and Registration Department ",
+    "requiredHeadOfficeEntity": "Registration Department",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Co-operation, Food and Consumer Protection Department  ",
+    "requiredHeadOfficeEntity": "Co-operation, Food and Consumer Protection -Secretariat",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Co-operation, Food and Consumer Protection Department",
+    "requiredHeadOfficeEntity": "Registrar of Co-operative Societies",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Co-operation, Food and Consumer Protection Department ",
+    "requiredHeadOfficeEntity": "Tamil Nadu Warehousing Corporation Limited",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Co-operation, Food and Consumer Protection Department ",
+    "requiredHeadOfficeEntity": "Commissionerate of Civil Supplies and Consumer Protection",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Co-operation, Food and Consumer Protection Department ",
+    "requiredHeadOfficeEntity": "State Consumer Dispute Redressal Commission",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Co-operation, Food and Consumer Protection Department",
+    "requiredHeadOfficeEntity": "TNCSC",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Co-operation, Food and Consumer Protection Department",
+    "requiredHeadOfficeEntity": "Civil Supplies and Consumer Protection",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Energy",
+    "requiredHeadOfficeEntity": "Energy-Secretariat",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Energy",
+    "requiredHeadOfficeEntity": "Chief Electrical Inspectorate",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Energy",
+    "requiredHeadOfficeEntity": "TNEB",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Energy",
+    "requiredHeadOfficeEntity": "Tamilnadu Energy Development Agency",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Energy",
+    "requiredHeadOfficeEntity": "Tamil Nadu Transmission Corporation Limited (TRANSCO)",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Energy",
+    "requiredHeadOfficeEntity": "Tamil Nadu Generation and Distribution Corporation Limited (TANGEDCO)",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Energy",
+    "requiredHeadOfficeEntity": "Tamil Nadu Power Finance & Infrastucture Development Corporation Limited",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Environment, Climate Change and Forests Department",
+    "requiredHeadOfficeEntity": "Environment-Secretariat",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Environment, Climate Change and Forests Department",
+    "requiredHeadOfficeEntity": "Directorate of Environment",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Environment, Climate Change and Forests Department",
+    "requiredHeadOfficeEntity": "Tamil Nadu Green Climate Company",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Environment, Climate Change and Forests Department ",
+    "requiredHeadOfficeEntity": "Forests Department -  PCCF",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Environment, Climate Change and Forests Department",
+    "requiredHeadOfficeEntity": "Tamil Nadu Forest Plantation Corporation Limited",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Environment, Climate Change and Forests Department ",
+    "requiredHeadOfficeEntity": "Tamil Nadu Wilderness Experiences Corporation Private Limited",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Environment, Climate Change and Forests Department ",
+    "requiredHeadOfficeEntity": "Zoo Authority of Tamil Nadu",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Environment, Climate Change and Forests Department ",
+    "requiredHeadOfficeEntity": "Tamil Nadu Tea Plantation Corporation Limited",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Environment, Climate Change and Forests Department ",
+    "requiredHeadOfficeEntity": "Arasu Rubber Corporation Limited",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Finance ",
+    "requiredHeadOfficeEntity": "Finance - Secretariat",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Finance ",
+    "requiredHeadOfficeEntity": "Tamil Nadu Infrastructure Development Board - TNIDB",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Finance ",
+    "requiredHeadOfficeEntity": "Treasuries and Accounts",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Finance ",
+    "requiredHeadOfficeEntity": "Local Fund Audit",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Finance ",
+    "requiredHeadOfficeEntity": "Small Savings",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Finance ",
+    "requiredHeadOfficeEntity": "Government Data Centre",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Finance ",
+    "requiredHeadOfficeEntity": "Co-operative Audit",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Finance ",
+    "requiredHeadOfficeEntity": "State Government Audit Dept.",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Finance ",
+    "requiredHeadOfficeEntity": "Pension",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Finance ",
+    "requiredHeadOfficeEntity": "Loans and Advances Cell",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Finance ",
+    "requiredHeadOfficeEntity": "Audit for Milk Co-operatives",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Finance ",
+    "requiredHeadOfficeEntity": "Hindu Religious Institutions Audit",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Health & Family Welfare dept.",
+    "requiredHeadOfficeEntity": "Directorate of Public Health and Preventive Medicine",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Health & Family Welfare dept.",
+    "requiredHeadOfficeEntity": "Health & FW - Secretariat",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Health & Family Welfare dept.",
+    "requiredHeadOfficeEntity": "Directorate of Medical and Rural Health Services",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Health & Family Welfare dept.",
+    "requiredHeadOfficeEntity": "Directorate of Medical Education",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Health & Family Welfare dept.",
+    "requiredHeadOfficeEntity": "Directorate of Family Welfare",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Health & Family Welfare dept.",
+    "requiredHeadOfficeEntity": "TN Food Safety & Drug Admistrative Dept.",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Health & Family Welfare dept.",
+    "requiredHeadOfficeEntity": "Directorate of Indian Medicine and Homoeopathy",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Health & Family Welfare dept.",
+    "requiredHeadOfficeEntity": "Tamil Nadu Medicinal Plant Farms & Herbal Medicine Coporation Limited",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Health & Family Welfare dept.",
+    "requiredHeadOfficeEntity": "Directorate of Tamilnadu State Health Transport",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Health & Family Welfare dept.",
+    "requiredHeadOfficeEntity": "Project Director Reproductive Child Health Project",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Health & Family Welfare dept.",
+    "requiredHeadOfficeEntity": "Tamil Nadu Health Systems Project",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "HHT&K",
+    "requiredHeadOfficeEntity": "Handlooms, Handicrafts, Textiles and Khadi-Secretariat",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "HHT&K",
+    "requiredHeadOfficeEntity": "Handlooms ",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "HHT&K",
+    "requiredHeadOfficeEntity": "Textiles",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "HHT&K",
+    "requiredHeadOfficeEntity": "Tamil Nadu Handloom Development Corporation Limited",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "HHT&K",
+    "requiredHeadOfficeEntity": "Tamil Nadu Zari Limited",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "HHT&K",
+    "requiredHeadOfficeEntity": "TamilNadu Textile Corporation Limited",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "HHT&K ",
+    "requiredHeadOfficeEntity": "Sericulture",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "HHT&K ",
+    "requiredHeadOfficeEntity": "Tamil Nadu Khadi & Village Industries Board",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "HHT&K ",
+    "requiredHeadOfficeEntity": "Tamil Nadu Coir Business Development Corporation",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "HHT&K ",
+    "requiredHeadOfficeEntity": "Tamil Nadu Handicrafts Development Corporation Limited",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Higher Education",
+    "requiredHeadOfficeEntity": "Higher Education Department-Secretariat",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Higher Education",
+    "requiredHeadOfficeEntity": "Higher Education - Secretariat",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Higher Education",
+    "requiredHeadOfficeEntity": "Collegiate Education",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Higher Education",
+    "requiredHeadOfficeEntity": "Technical Education",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Higher Education",
+    "requiredHeadOfficeEntity": "Universities",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Higher Education",
+    "requiredHeadOfficeEntity": "Archives and Historical Research",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Higher Education",
+    "requiredHeadOfficeEntity": "Council for Science & Technology",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Higher Education",
+    "requiredHeadOfficeEntity": "Science & Technology Centre",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Higher Education",
+    "requiredHeadOfficeEntity": "Science City in Chennai",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Higher Education",
+    "requiredHeadOfficeEntity": "Tamil Nadu State Council for Higher Education",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Higher Education",
+    "requiredHeadOfficeEntity": "Tamil Nadu State Council for Technical Education",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Higher Education",
+    "requiredHeadOfficeEntity": "Anna University Chennai",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Higher Education",
+    "requiredHeadOfficeEntity": "Tamil Nadu Unmanned Aerial Vehicles Corporation Limited",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Higher Education",
+    "requiredHeadOfficeEntity": "University of Madras",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Higher Education",
+    "requiredHeadOfficeEntity": "Madurai Kamaraj University",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Higher Education",
+    "requiredHeadOfficeEntity": "Bharathiar University",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Higher Education",
+    "requiredHeadOfficeEntity": "Bharathidasan University",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Higher Education",
+    "requiredHeadOfficeEntity": "Mother Teresa Womens University",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Higher Education",
+    "requiredHeadOfficeEntity": "Alagappa University",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Higher Education",
+    "requiredHeadOfficeEntity": "Manonmaniam Sundaranar University",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Higher Education",
+    "requiredHeadOfficeEntity": "Periyar University",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Higher Education",
+    "requiredHeadOfficeEntity": "Tamil Nadu Open University",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Higher Education",
+    "requiredHeadOfficeEntity": "Thiruvalluar University",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Higher Education",
+    "requiredHeadOfficeEntity": "TN Teachers Education University",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Higher Education",
+    "requiredHeadOfficeEntity": "Annamalai University",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Highways and Minor Ports Department",
+    "requiredHeadOfficeEntity": "Highways - Secretariat",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Highways and Minor Ports Department",
+    "requiredHeadOfficeEntity": "National Highways",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Highways and Minor Ports Department",
+    "requiredHeadOfficeEntity": "Highways, Construction and Maintainence",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Highways and Minor Ports Department",
+    "requiredHeadOfficeEntity": "Highways, Projects Wing",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Highways and Minor Ports Department",
+    "requiredHeadOfficeEntity": "Tamil Nadu Road Sector Project",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Highways and Minor Ports Department",
+    "requiredHeadOfficeEntity": "Highways Research Station",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Highways and Minor Ports Department",
+    "requiredHeadOfficeEntity": "Highways (NABARD and Rural Roads)",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Highways and Minor Ports Department",
+    "requiredHeadOfficeEntity": "Highways, Planning, Designs & Investigation",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Highways and Minor Ports Department",
+    "requiredHeadOfficeEntity": "Tamil Nadu Maritime Board",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Highways and Minor Ports Department",
+    "requiredHeadOfficeEntity": "Minor Ports",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Highways and Minor Ports Department",
+    "requiredHeadOfficeEntity": "Poompuhar Shipping Corporation Limited",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Highways and Minor Ports Department",
+    "requiredHeadOfficeEntity": "Chief Engineer (Metro)",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Highways and Minor Ports Department",
+    "requiredHeadOfficeEntity": "Director General, Highways Department",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Highways and Minor Ports Department",
+    "requiredHeadOfficeEntity": "Project Director - Chennai Kanyakumari Industrial Corridor Project (World bank/ADB)",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Highways and Minor Ports Department",
+    "requiredHeadOfficeEntity": "TamilNadu Road Development Company Limited(TNRDC)",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Highways and Minor Ports Department",
+    "requiredHeadOfficeEntity": "Tamil Nadu Road Infrastructure Development Corporation (TNRIDC) - World Bank",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Home, P&E - Fire and Rescue Services",
+    "requiredHeadOfficeEntity": "Fire and Rescue Services",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Home, P&E - Police",
+    "requiredHeadOfficeEntity": "Greater Chennai Police",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Home, P&E - Police",
+    "requiredHeadOfficeEntity": "Director General of Police",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Home, P&E - Police",
+    "requiredHeadOfficeEntity": "Forensic Science Department",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Home, P&E - Police",
+    "requiredHeadOfficeEntity": "Home-Secretariat",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Home, P&E - Police",
+    "requiredHeadOfficeEntity": "Directorate of Prosecution",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Home, P&E - Police",
+    "requiredHeadOfficeEntity": "Litigation",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Home, P&E - Police",
+    "requiredHeadOfficeEntity": "Police Training College (DGP)",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Home, P&E - Police",
+    "requiredHeadOfficeEntity": "Civil Defence",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Home, P&E - Police",
+    "requiredHeadOfficeEntity": "Protection of Civil Rights (IGP)",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Home, P&E - Police",
+    "requiredHeadOfficeEntity": "Tamil Nadu Police Housing Corporation Limited",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Home, P&E - Police",
+    "requiredHeadOfficeEntity": "Tamil Nadu Uniformed Service Recruitment Board",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Home, P&E - Police",
+    "requiredHeadOfficeEntity": "Forensic Science ",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Home, P&E - Prisons & Correctional Services",
+    "requiredHeadOfficeEntity": "Prisons (IGP)",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Home, P&E - Prohibition and Excise",
+    "requiredHeadOfficeEntity": "Commissionerate of Prohibition and Excise",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Home, P&E - Prohibition and Excise",
+    "requiredHeadOfficeEntity": "Tamil Nadu State Marketing Corporation Limited",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Housing and Urban Development Department",
+    "requiredHeadOfficeEntity": "Hg & UD - Secretariat",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Housing and Urban Development Department",
+    "requiredHeadOfficeEntity": "Tamil Nadu Housing Board",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Housing and Urban Development Department",
+    "requiredHeadOfficeEntity": "Registrar of Co-operative Societies (Housing)",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Housing and Urban Development Department",
+    "requiredHeadOfficeEntity": "Town and Country Planning",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Housing and Urban Development Department",
+    "requiredHeadOfficeEntity": "Chennai Metropolitan Development Authority",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Housing and Urban Development Department",
+    "requiredHeadOfficeEntity": "Tamil Nadu Urban Habitat Development Board",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Housing and Urban Development Department",
+    "requiredHeadOfficeEntity": "Chennai Unified Metropolitan Transport Authority (CUMTA)",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Housing and Urban Development Department",
+    "requiredHeadOfficeEntity": "Tamil Nadu Urban Finance & Infrastucture Development Corporation Limited.",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Human Resources Management",
+    "requiredHeadOfficeEntity": "Human Resources Management - Secretariat",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Human Resources Management",
+    "requiredHeadOfficeEntity": "Commissionerate of Disciplinary Proceedings_Chennai",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Human Resources Management",
+    "requiredHeadOfficeEntity": "Directorate of Vigilance and Anti Corruption",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Human Resources Management",
+    "requiredHeadOfficeEntity": "Tamil Nadu Civil Service Training Institute",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Human Resources Management",
+    "requiredHeadOfficeEntity": "Tamil Nadu Public Service Commission",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Industries, Investment Promotion and Commerce ",
+    "requiredHeadOfficeEntity": "Geology and Mining",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Industries, Investment Promotion and Commerce ",
+    "requiredHeadOfficeEntity": "Industries and Commerce",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Industries, Investment Promotion and Commerce ",
+    "requiredHeadOfficeEntity": "Guidance Tamil Nadu",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Industries, Investment Promotion and Commerce ",
+    "requiredHeadOfficeEntity": "TN Cements Corporation",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Industries, Investment Promotion and Commerce ",
+    "requiredHeadOfficeEntity": "Tamil Nadu Industrial Development Corporation Ltd",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Industries, Investment Promotion and Commerce ",
+    "requiredHeadOfficeEntity": "Tamil Nadu Industrial Explosives Limited",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Industries, Investment Promotion and Commerce ",
+    "requiredHeadOfficeEntity": "Tamil Nadu Industrial Investment Corporation Limited",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Industries, Investment Promotion and Commerce ",
+    "requiredHeadOfficeEntity": "Tamil Nadu Magnesite Limited",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Industries, Investment Promotion and Commerce ",
+    "requiredHeadOfficeEntity": "Tamilnadu Newsprint and Papers Limited",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Industries, Investment Promotion and Commerce ",
+    "requiredHeadOfficeEntity": "State Industries Promotion Corporation of Tamil Nadu Limited",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Industries, Investment Promotion and Commerce ",
+    "requiredHeadOfficeEntity": "Tamil Nadu Small Industries Development Corporation Limited",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Industries, Investment Promotion and Commerce ",
+    "requiredHeadOfficeEntity": "Tamil Nadu Minerals Limited",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Industries, Investment Promotion and Commerce ",
+    "requiredHeadOfficeEntity": "Tamil Nadu Salt Corporation",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Information Technology and Digital Services Department",
+    "requiredHeadOfficeEntity": "e-Governance",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Information Technology and Digital Services Department",
+    "requiredHeadOfficeEntity": "Tamil Virtual Academy",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Information Technology and Digital Services Department",
+    "requiredHeadOfficeEntity": "Information Technology - Secretariat",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Information Technology and Digital Services Department",
+    "requiredHeadOfficeEntity": "TIDEL Park Coimbatore Ltd",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Information Technology and Digital Services Department",
+    "requiredHeadOfficeEntity": "Tidel Park Ltd Chennai",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Information Technology and Digital Services Department",
+    "requiredHeadOfficeEntity": "Tamil Nadu Fibernet Corporation Limited",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Information Technology and Digital Services Department",
+    "requiredHeadOfficeEntity": "Tamil Nadu Arasu Cable TV Corporation Limited",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Information Technology and Digital Services Department",
+    "requiredHeadOfficeEntity": "ICT Academy",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Labour Welfare & Skill Development",
+    "requiredHeadOfficeEntity": "Directorate of Industrial Safety and Health",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Labour Welfare & Skill Development",
+    "requiredHeadOfficeEntity": "Employment and Training (Employment Wing)",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Labour Welfare & Skill Development",
+    "requiredHeadOfficeEntity": "Employment and Training (Training Wing)",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Labour Welfare & Skill Development",
+    "requiredHeadOfficeEntity": "Medical and Rural Health Services (ESIS)",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Labour Welfare & Skill Development",
+    "requiredHeadOfficeEntity": "Labour",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Labour Welfare & Skill Development",
+    "requiredHeadOfficeEntity": "Tamil Nadu Skill Development Corporation",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Law",
+    "requiredHeadOfficeEntity": "Directorate of Legal Studies",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Micro, Small & Medium Enterprises",
+    "requiredHeadOfficeEntity": "Micro Small and Medium Enterprises - Secretariat",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Micro, Small & Medium Enterprises",
+    "requiredHeadOfficeEntity": "Tamil Nadu Startup and Innovation Mission",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Micro, Small & Medium Enterprises",
+    "requiredHeadOfficeEntity": "Facilitating MSMEs of TamilNadu",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Municipal Administration & Water Supply",
+    "requiredHeadOfficeEntity": "MAWS - Secretariat",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Municipal Administration & Water Supply",
+    "requiredHeadOfficeEntity": "Commissionerate of Municipal Administration",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Municipal Administration & Water Supply",
+    "requiredHeadOfficeEntity": "Directorate of Town Panchayats",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Municipal Administration & Water Supply",
+    "requiredHeadOfficeEntity": "Chennai Metropolitan Water Supply and Sewerage Board",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Municipal Administration & Water Supply",
+    "requiredHeadOfficeEntity": "Tamil Nadu Water Supply and Drainage Board",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Municipal Administration & Water Supply",
+    "requiredHeadOfficeEntity": "State Project Management Unit-Jal Jeevan Mission",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Municipal Administration & Water Supply",
+    "requiredHeadOfficeEntity": "Chennai Smart City Ltd",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Municipal Administration & Water Supply",
+    "requiredHeadOfficeEntity": "Corporation of Chennai",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Municipal Administration & Water Supply",
+    "requiredHeadOfficeEntity": "Greater Chennai Corporation - ADB Tenders",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Municipal Administration & Water Supply",
+    "requiredHeadOfficeEntity": "Tamil Nadu Water Resources Conservation and Rivers restoration Corporation Limited",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Planning, Development and Special Initiatives Department",
+    "requiredHeadOfficeEntity": "Commissionerate of Economics and Statistics",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Planning, Development and Special Initiatives Department",
+    "requiredHeadOfficeEntity": "Directorate of Evaluation and Applied Research",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Planning, Development and Special Initiatives Department",
+    "requiredHeadOfficeEntity": "State Planning Commission (Tamil Nadu)",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Public Department",
+    "requiredHeadOfficeEntity": "Public Department - Secretariat",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Public Department",
+    "requiredHeadOfficeEntity": "Commissionerate of Rehabilitation and Welfare of Non-Resident Tamils",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Public Department",
+    "requiredHeadOfficeEntity": "Tamil Nadu Ex-Servicemen’s Corporation Limited",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Public Department",
+    "requiredHeadOfficeEntity": "Overseas Manpower Corporation Limited",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "PWD - Buildings",
+    "requiredHeadOfficeEntity": "PWD - Scretariat",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "PWD - Buildings",
+    "requiredHeadOfficeEntity": "Public Works - Buildings",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Revenue & Disaster Management - Relief on Account of Natural Calamities",
+    "requiredHeadOfficeEntity": "Commr. of Revenue Administration",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Revenue & Disaster Management - Relief on Account of Natural Calamities",
+    "requiredHeadOfficeEntity": "Tamilnadu Disaster Risk Reduction Agency",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Revenue & Disaster Management",
+    "requiredHeadOfficeEntity": "Agricultural Income Tax",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Revenue & Disaster Management",
+    "requiredHeadOfficeEntity": "Commissionerate of Revenue Administration",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Revenue & Disaster Management",
+    "requiredHeadOfficeEntity": "Land Administration",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Revenue & Disaster Management",
+    "requiredHeadOfficeEntity": "Land Reforms",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Revenue & Disaster Management",
+    "requiredHeadOfficeEntity": "Revenue & DM - Secretariat",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Revenue & Disaster Management",
+    "requiredHeadOfficeEntity": "Survey and Settlement",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Revenue & Disaster Management",
+    "requiredHeadOfficeEntity": "Urban Land Ceiling & Urban Land Tax",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Rural Development and Panchayat Raj Department",
+    "requiredHeadOfficeEntity": "State Election Commission",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Rural Development and Panchayat Raj Department",
+    "requiredHeadOfficeEntity": "Rural Development and Panchayat Raj",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Rural Development and Panchayat Raj Department",
+    "requiredHeadOfficeEntity": "Tamil Nadu Corporation for Development of Women Limited",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Rural Development and Panchayat Raj Department",
+    "requiredHeadOfficeEntity": "Tamil Nadu Rural Housing Infrastructure Development Corporation Limited",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "School Education",
+    "requiredHeadOfficeEntity": "Directorate of Elementary Education",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "School Education",
+    "requiredHeadOfficeEntity": "Directorate of Government Examination",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "School Education",
+    "requiredHeadOfficeEntity": "Directorate of Matriculation Schools",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "School Education",
+    "requiredHeadOfficeEntity": "Directorate of Non-Formal and Adult Education",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "School Education",
+    "requiredHeadOfficeEntity": "Directorate of Public Libraries",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "School Education",
+    "requiredHeadOfficeEntity": "Directorate of School Education",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "School Education",
+    "requiredHeadOfficeEntity": "Samagra Shiksha (inclusive of Rashtriya Madhyamik Shiksha Abbiyan (RMSA) and Sarva Shiksha Abiyan)",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "School Education",
+    "requiredHeadOfficeEntity": "State Council of Educational, Research and Training",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "School Education",
+    "requiredHeadOfficeEntity": "Teachers Recruitment Board",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "School Education",
+    "requiredHeadOfficeEntity": "Namma School Foundation",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "School Education",
+    "requiredHeadOfficeEntity": "Tamil Nadu Text Book and Educational Services Corporation",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Social Welfare and Women Empowerment Department",
+    "requiredHeadOfficeEntity": "Social Defence",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Social Welfare and Women Empowerment Department",
+    "requiredHeadOfficeEntity": "Social Welfare",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Social Welfare and Women Empowerment Department",
+    "requiredHeadOfficeEntity": "Tamil Nadu Working Womens Hostels Corporation Limited",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Social Welfare and Women Empowerment Department",
+    "requiredHeadOfficeEntity": "Tamil Nadu Integrated Nutrition Project (TINP) (ICDS)",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Tamil Dev. and Information Department",
+    "requiredHeadOfficeEntity": "Information and Public Relations Department",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Tamil Dev. and Information Department",
+    "requiredHeadOfficeEntity": "Stationery and Printing",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Tamil Dev. and Information Department",
+    "requiredHeadOfficeEntity": "Tamil Development",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Tourism, Culture & RE",
+    "requiredHeadOfficeEntity": "Hindu Religious and Charitable Endowments",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Tourism, Culture & RE",
+    "requiredHeadOfficeEntity": "Directorate of Tourism",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Tourism, Culture & RE",
+    "requiredHeadOfficeEntity": "Archaeology",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Tourism, Culture & RE",
+    "requiredHeadOfficeEntity": "Government Museum",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Tourism, Culture & RE",
+    "requiredHeadOfficeEntity": "Art and Culture",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Tourism, Culture & RE",
+    "requiredHeadOfficeEntity": "Tamil Nadu Tourism Development Corporation Limited",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Transport",
+    "requiredHeadOfficeEntity": "Commissionerate of Transport",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Transport",
+    "requiredHeadOfficeEntity": "Metropolitan Transport Corporation (Chennai) Ltd.",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Transport",
+    "requiredHeadOfficeEntity": "State Express Transport Corporation Tamil Nadu Limited",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Transport",
+    "requiredHeadOfficeEntity": "TNSTC, Coimbatore",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Transport",
+    "requiredHeadOfficeEntity": "TNSTC, Kumbakonnam",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Transport",
+    "requiredHeadOfficeEntity": "TNSTC, Madurai",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Transport",
+    "requiredHeadOfficeEntity": "TNSTC, Salem",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Transport",
+    "requiredHeadOfficeEntity": "TNSTC, Tirunelveli",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Transport",
+    "requiredHeadOfficeEntity": "Tamilnadu State Transport Corporation, Villupuram",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Transport",
+    "requiredHeadOfficeEntity": "Tamil Nadu Transport Development Finance Corporation Limited",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Transport",
+    "requiredHeadOfficeEntity": "Pallavan Transport Consultancy Services Limited",
+    "corpBoardSoc": "Yes",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Transport ",
+    "requiredHeadOfficeEntity": "Transport - Secretariat",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Transport ",
+    "requiredHeadOfficeEntity": "Motor Vehicles Maintenance",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Water Resources ",
+    "requiredHeadOfficeEntity": "Boilers",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Water Resources ",
+    "requiredHeadOfficeEntity": "Institute of Water Studies",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Water Resources ",
+    "requiredHeadOfficeEntity": "Project Director, IAMWARM",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Water Resources ",
+    "requiredHeadOfficeEntity": "Water Resources  - Secretariat",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Water Resources ",
+    "requiredHeadOfficeEntity": "WRD -Ground Water",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Water Resources ",
+    "requiredHeadOfficeEntity": "WRD (previously Public Works-Irrigation)",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Welfare of Differently Abled Persons",
+    "requiredHeadOfficeEntity": "Commissionerate for the Welfare of Differently Abled Persons",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Youth Welfare & Sports Development",
+    "requiredHeadOfficeEntity": "Youth Welfare and Sports Development - Secretariat",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Youth Welfare & Sports Development",
+    "requiredHeadOfficeEntity": "National Cadet Corps",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Youth Welfare & Sports Development",
+    "requiredHeadOfficeEntity": "Tamil Nadu Physical Education & Sports Univerity",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  },
+  {
+    "orgId": null,
+    "secretariatDept": "Youth Welfare & Sports Development",
+    "requiredHeadOfficeEntity": "Sports Development Authority of Tamil Nadu",
+    "corpBoardSoc": "No",
+    "onboardedToGePNIC": "No",
+    "level1Office": null,
+    "level2Office": null,
+    "onboardedDate": null
+  }
+]

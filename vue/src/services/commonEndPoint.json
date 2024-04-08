@@ -1,0 +1,9 @@
+[
+	{"getServerStatus" : "login/getServerStatus"},
+	{"userList" : "api/userList"},
+	{"signin" : "login/signin"},
+	{"addUser" : "login/addUser"},
+	{"logout" : "login/logout"},
+	{"sabbathDoc" : "api/sabbathDoc"},
+	{"bibleCommentaryDoc" : "api/bibleCommentaryDoc"}
+]

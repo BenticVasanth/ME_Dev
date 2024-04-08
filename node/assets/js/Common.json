@@ -1,0 +1,24 @@
+{
+    "GLOBAL": {
+        "login": [
+            {
+                "saveMandatoryMsg": "Please enter all the mandatory fields."
+            },
+            {
+                "plsEnter": "Please enter %s"
+            },
+            {
+                "notMeetPwdPolicy": "Password does not meet the password policy."
+            },
+            {
+                "newCnfPwdNotMatch": "New Password and Confirm Password does not match"
+            },
+            {
+                "newPwd": "New Password"
+            },
+            {
+                "cnfPwd": "Confirm Password"
+            }
+        ]
+    }
+}

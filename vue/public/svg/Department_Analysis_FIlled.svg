@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Department_Analysis_FIlled" transform="translate(-748 -188)">
+    <g id="user-square">
+      <path id="Vector" d="M0,0H24V24H0Z" transform="translate(748 188)" fill="none" opacity="0"/>
+      <path id="Vector-2" data-name="Vector" d="M20,5.81v8.38c0,2.81-1.29,4.74-3.56,5.47a6.861,6.861,0,0,1-2.25.34H5.81a6.861,6.861,0,0,1-2.25-.34C1.29,18.93,0,17,0,14.19V5.81C0,2.17,2.17,0,5.81,0h8.38C17.83,0,20,2.17,20,5.81Z" transform="translate(750 190)" fill="#5046af"/>
+      <path id="Vector-3" data-name="Vector" d="M12.88,4.69a6.861,6.861,0,0,1-2.25.34H2.25A6.861,6.861,0,0,1,0,4.69C.35,2.05,3.11,0,6.44,0S12.53,2.05,12.88,4.69Z" transform="translate(753.56 204.97)" fill="#fff"/>
+      <path id="Vector-4" data-name="Vector" d="M7.16,3.58A3.58,3.58,0,1,1,3.58,0,3.585,3.585,0,0,1,7.16,3.58Z" transform="translate(756.42 196)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,367 @@
+[
+    {
+      "id": 1,
+      "tenderStatus": "Basic Details",
+      "variavleToTitleMap": [
+        {
+          "id": 1,
+          "stringValue": "tenderId",
+          "anotherStringValue": "Tender ID",
+          "selected": false
+        },
+        {
+          "id": 2,
+          "stringValue": "tenderReferenceNo",
+          "anotherStringValue": "Tender Reference No",
+          "selected": false
+        },
+        {
+          "id": 3,
+          "stringValue": "tenderTitle",
+          "anotherStringValue": "Tender Title",
+          "selected": false
+        },
+        {
+          "id": 4,
+          "stringValue": "organisationChain",
+          "anotherStringValue": "Organisation Chain",
+          "selected": false
+        },
+        {
+          "id": 5,
+          "stringValue": "tenderCategory",
+          "anotherStringValue": "Tender Category",
+          "selected": false
+        },
+        {
+          "id": 6,
+          "stringValue": "tenderType",
+          "anotherStringValue": "Tender Type",
+          "selected": false
+        },
+        {
+          "id": 7,
+          "stringValue": "tenderType",
+          "anotherStringValue": "Tender Type",
+          "selected": false
+        },
+        {
+          "id": 8,
+          "stringValue": "formOfContract",
+          "anotherStringValue": "Form of contract",
+          "selected": false
+        },
+        {
+          "id": 9,
+          "stringValue": "productCategory",
+          "anotherStringValue": "Product Category",
+          "selected": false
+        },
+        {
+          "id": 10,
+          "stringValue": "productSubCategory",
+          "anotherStringValue": "Product Sub Category",
+          "selected": false
+        },
+        {
+          "id": 11,
+          "stringValue": "noOfPackets",
+          "anotherStringValue": "No. of Packets",
+          "selected": false
+        },
+        {
+          "id": 12,
+          "stringValue": "isMulticurrencyAllowedForBoQ",
+          "anotherStringValue": "Multicurrency Allowed (Yes/No)",
+          "selected": false
+        },
+        {
+          "id": 13,
+          "stringValue": "isTwoStageBiddingAllowed",
+          "anotherStringValue": "Two stage bidding allowed (Yes/No)",
+          "selected": false
+        },
+        {
+          "id": 14,
+          "stringValue": "tenderFeeInRs",
+          "anotherStringValue": "Tender Fee in Rs.",
+          "selected": false
+        },
+        {
+          "id": 15,
+          "stringValue": "isTenderFeeExemption",
+          "anotherStringValue": "Tender Fee Exemption (Yes/No)",
+          "selected": false
+        },
+        {
+          "id": 16,
+          "stringValue": "processingFeeInRs",
+          "anotherStringValue": "Processing Fee in Rs.",
+          "selected": false
+        },
+        {
+          "id": 17,
+          "stringValue": "feePayableTo",
+          "anotherStringValue": "Fee Payable To",
+          "selected": false
+        },
+        {
+          "id": 18,
+          "stringValue": "feePayableAt",
+          "anotherStringValue": "Fee Payable at",
+          "selected": false
+        },
+        {
+          "id": 19,
+          "stringValue": "eMDInRs",
+          "anotherStringValue": "EMD in Rs.",
+          "selected": false
+        }
+      ],
+      "selected": false
+    },
+    {
+      "id": 2,
+      "tenderStatus": "Critical Dates",
+      "variavleToTitleMap": [
+        {
+          "id": 21,
+          "stringValue": "isMulticurrencyAllowedForEMDPayment",
+          "anotherStringValue": "For EMD payment Multicurrency Allowed (Yes/No)",
+          "selected": false
+        },
+        {
+          "id": 22,
+          "stringValue": "eMDPayableTo",
+          "anotherStringValue": "EMD Payable To",
+          "selected": false
+        },
+        {
+          "id": 23,
+          "stringValue": "eMDPayableAt",
+          "anotherStringValue": "EMD Payable at",
+          "selected": false
+        },
+        {
+          "id": 24,
+          "stringValue": "remarks",
+          "anotherStringValue": "Remarks",
+          "selected": false
+        },
+        {
+          "id": 25,
+          "stringValue": "location",
+          "anotherStringValue": "Location",
+          "selected": false
+        },
+        {
+          "id": 26,
+          "stringValue": "pincode",
+          "anotherStringValue": "Pincode",
+          "selected": false
+        },
+        {
+          "id": 27,
+          "stringValue": "district",
+          "anotherStringValue": "District",
+          "selected": false
+        },
+        {
+          "id": 28,
+          "stringValue": "tenderCreatedBy",
+          "anotherStringValue": "Tender Created by",
+          "selected": false
+        },
+        {
+          "id": 29,
+          "stringValue": "tenderCreatorDesignation",
+          "anotherStringValue": "Tender Creator Designation",
+          "selected": false
+        }
+      ],
+      "selected": false
+    },
+    {
+      "id": 3,
+      "tenderStatus": "Bidder Details",
+      "variavleToTitleMap": [
+        {
+          "id": 31,
+          "stringValue": "tenderBulletinDate",
+          "anotherStringValue": "Tender Bulletin Date",
+          "selected": false
+        },
+        {
+          "id": 32,
+          "stringValue": "tenderAdvertisementDate",
+          "anotherStringValue": "Tender Advertisement Date",
+          "selected": false
+        },
+        {
+          "id": 33,
+          "stringValue": "prebidMeetingDate",
+          "anotherStringValue": "Prebid Meeting Date",
+          "selected": false
+        },
+        {
+          "id": 34,
+          "stringValue": "dateOfLastClarificationToBidderQueries",
+          "anotherStringValue": "Date of last clarification to bidder queries",
+          "selected": false
+        },
+        {
+          "id": 35,
+          "stringValue": "bidSubmissionClosingDateInitial",
+          "anotherStringValue": "Bid Submission Closing Date (Initial)",
+          "selected": false
+        },
+        {
+          "id": 36,
+          "stringValue": "isDateCorrigendumIssuedForBidClosingDeadline",
+          "anotherStringValue": "Whether date corrigendum issued for bid closing deadline",
+          "selected": false
+        },
+        {
+          "id": 37,
+          "stringValue": "bidSubmissionClosingDateAfterCorrigendum",
+          "anotherStringValue": "Bid Submission Closing Date (After any date corrigenda)",
+          "selected": false
+        },
+        {
+          "id": 38,
+          "stringValue": "bidOpeningDateDeclaredWhilePublishingTender",
+          "anotherStringValue": "Bid Opening date declared while publishing tender",
+          "selected": false
+        },
+        {
+          "id": 39,
+          "stringValue": "technicalBidSummaryUploadDate",
+          "anotherStringValue": "Technical bid summary upload date",
+          "selected": false
+        }
+      ],
+      "selected": false
+    },
+    {
+      "id": 4,
+      "tenderStatus": "Fee Details",
+      "variavleToTitleMap": [
+        {
+          "id": 41,
+          "stringValue": "financialSummaryUploadedDate",
+          "anotherStringValue": "Fin. Summary uploaded date",
+          "selected": false
+        },
+        {
+          "id": 42,
+          "stringValue": "financialEvaluationDate",
+          "anotherStringValue": "Fin. Evaluation Date",
+          "selected": false
+        },
+        {
+          "id": 43,
+          "stringValue": "isNegotiationConducted",
+          "anotherStringValue": "Whether negotiation conducted",
+          "selected": false
+        },
+        {
+          "id": 44,
+          "stringValue": "negotiationEndDate",
+          "anotherStringValue": "Negotiation end date",
+          "selected": false
+        },
+        {
+          "id": 45,
+          "stringValue": "awardOfferedDate",
+          "anotherStringValue": "Award offered date date",
+          "selected": false
+        },
+        {
+          "id": 46,
+          "stringValue": "bidValidityInDays",
+          "anotherStringValue": "Bid Validity in days",
+          "selected": false
+        },
+        {
+          "id": 47,
+          "stringValue": "tenderStatus",
+          "anotherStringValue": "Tender Status",
+          "selected": false
+        },
+        {
+          "id": 48,
+          "stringValue": "reasonForRetenderingorCancellation",
+          "anotherStringValue": "Reason for Retendering / Cancellation",
+          "selected": false
+        },
+        {
+          "id": 49,
+          "stringValue": "noOfCorrigendumsIssued",
+          "anotherStringValue": "No. of Corrigendums issued",
+          "selected": false
+        }
+      ],
+      "selected": false
+    },
+    {
+      "id": 5,
+      "tenderStatus": "AOC Details",
+      "variavleToTitleMap": [
+        {
+          "id": 51,
+          "stringValue": "noOfBiddersParticipated",
+          "anotherStringValue": "No. of Bidders Participated",
+          "selected": false
+        },
+        {
+          "id": 52,
+          "stringValue": "noOfBiddersSubmittedForTechnicalEvaluation",
+          "anotherStringValue": "No. of bidders submitted for technical evaluation",
+          "selected": false
+        },
+        {
+          "id": 53,
+          "stringValue": "noOfBiddersFinanciallyEvaluated",
+          "anotherStringValue": "No. of Bidders Financially Evaluated",
+          "selected": false
+        },
+        {
+          "id": 54,
+          "stringValue": "isAllowPrevilegedBidders",
+          "anotherStringValue": "Allow Previleged Bidders (Yes / No)",
+          "selected": false
+        },
+        {
+          "id": 55,
+          "stringValue": "noOfPrevilegedBiddersParticipated",
+          "anotherStringValue": "No. of Previleged bidders participated",
+          "selected": false
+        },
+        {
+          "id": 56,
+          "stringValue": "valueOfTender",
+          "anotherStringValue": "Value of Tender (Estimate Value)",
+          "selected": false
+        },
+        {
+          "id": 57,
+          "stringValue": "valueOfLowestBid",
+          "anotherStringValue": "Value of lowest bid (L1/HI)",
+          "selected": false
+        },
+        {
+          "id": 58,
+          "stringValue": "negotiatedPrice",
+          "anotherStringValue": "Negotiated price",
+          "selected": false
+        },
+        {
+          "id": 59,
+          "stringValue": "noOfBiddersToWhomTheAoCGiven",
+          "anotherStringValue": "No. of Bidders to whom the AoC given",
+          "selected": false
+        }
+      ],
+      "selected": false
+    }
+  ]

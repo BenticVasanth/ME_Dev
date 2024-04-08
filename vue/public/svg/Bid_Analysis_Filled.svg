@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Bid_Analysis_Filled" transform="translate(-6963 -6058)">
+    <g id="Group_16922" data-name="Group 16922" transform="translate(1002 -395)">
+      <g id="vuesax_bulk_brush" data-name="vuesax/bulk/brush" transform="translate(5405 6073)">
+        <g id="brush">
+          <path id="Vector" d="M0,0H24V24H0Z" transform="translate(580 404) rotate(180)" fill="none" opacity="0"/>
+          <path id="Union_61" data-name="Union 61" d="M-6482.489-5782a2.007,2.007,0,0,1-2-2v-2.1a2,2,0,0,0-.826-1.619,7.973,7.973,0,0,1-1.295-.744l-1.858-1.048a2.982,2.982,0,0,1-1.531-2.609v-3.561h.028A8,8,0,0,1-6482-5803a8,8,0,0,1,7.97,7.32h.05v3.561a3,3,0,0,1-1.529,2.609l-1.968,1.109a8,8,0,0,1-1.149.656,2,2,0,0,0-.864,1.645v2.1a2.007,2.007,0,0,1-2,2Z" transform="translate(7049.999 6184)" fill="#5046af"/>
+        </g>
+      </g>
+    </g>
+    <path id="Path_11085" data-name="Path 11085" d="M0-38.664l1.336,1.336L4.007-40" transform="translate(6972.997 6105.933)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+  </g>
+</svg>
