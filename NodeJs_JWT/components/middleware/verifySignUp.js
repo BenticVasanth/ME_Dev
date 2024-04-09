@@ -1,11 +1,13 @@
 const db = require("../models");
 const User = db.userModal;
+const aesUtil = require("../../assets/js/aesUtil");
 
 checkDuplicateUsernameOrEmail = (req, res, next) => {
+  let response = JSON.parse(aesUtil.testDecrypt(req.body.stringValue, req.get('auth_token')));
   // Username
   User.findOne({
     where: {
-      Name: req.body.userName
+      Name: response.userName
     }
   }).then(user => {
     if (user) {
@@ -18,7 +20,7 @@ checkDuplicateUsernameOrEmail = (req, res, next) => {
     // Email
     User.findOne({
       where: {
-        Email: req.body.email
+        Email: response.email
       }
     }).then(user => {
       if (user) {
@@ -30,6 +32,8 @@ checkDuplicateUsernameOrEmail = (req, res, next) => {
 
       next();
     });
+  }).catch(err => {
+    return res.status(500).send({ message: err.message || "Some error occurred while creating the Users." });
   });
 };
 

@@ -16,7 +16,7 @@ class CommonService {
             this.nullToken(response);
             this.tokenSet(response);
             let hashJsonString = CryptoJS.AES.decrypt(response.data, $global.$store.tokenId).toString(CryptoJS.enc.Utf8);
-            return JSON.parse(hashJsonString);;
+            return JSON.parse(hashJsonString);
         }).catch((e) => {
             this.forCatch(e);
             return [];
@@ -135,14 +135,23 @@ class CommonService {
     }
     forCatch(e) {
         if (e.response.data == 'Session expired' || e.response.data == 'Invalid request' || e.response.data == 'Your account is logged in on another system. Please login again to proceed.') {
-            $global.CommomnJs.methods.warnAlert('Failed', e.response.data, 'failure').then((value) => {
-                if (value) {
-                    $global.$store.$reset()
-                    $global.router.push({
-                        path: "/"
-                    });
-                }
-            })
+            // $global.CommomnJs.methods.warnAlert('Failed', e.response.data, 'failure').then((value) => {
+            //     if (value) {
+            // $global.$store.$reset()
+            // $global.router.push({
+            //     path: "/"
+            // });
+            //     }
+            // })
+            if (confirm(e.response.data) == true) {
+                $global.$store.$reset()
+                $global.router.push({
+                    path: "/"
+                });
+            } else {
+                return false
+            }
+
         } else if (e.response.status != '200' && e.response.status != '503') {
             let url = e.response.config.url;
             let serviceName = url.substring(url.lastIndexOf('/') + 1, url.length);

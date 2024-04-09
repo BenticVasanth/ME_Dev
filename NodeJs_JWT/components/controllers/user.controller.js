@@ -1,10 +1,11 @@
 const db = require("../models");
 const userModal = db.userModal;
 const aesUtil = require("../../assets/js/aesUtil");
+const validations = require("../../assets/js/validations");
+const sequelize = require("sequelize");
 
 // Retrieve all User List from the database.
 exports.findAll = (req, res) => {
-  console.log('findAll');
   userModal.findAll()
     .then(data => {
       res.setHeader('auth_token', global.auth_token);

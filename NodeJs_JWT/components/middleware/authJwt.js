@@ -1,7 +1,5 @@
 const jwt = require("jsonwebtoken");
 const config = require("../config/auth.config.js");
-const db = require("../models");
-const User = db.userModal;
 
 verifyToken = (req, res, next) => {
   console.log('verifyToken');
@@ -65,7 +63,7 @@ function setToken(id) {
     {
       algorithm: 'HS256',
       allowInsecureKeySizes: true,
-      expiresIn: 60, //Sec
+      expiresIn: 10, //Sec
     });
 
   global.auth_token = token;

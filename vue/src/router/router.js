@@ -45,8 +45,7 @@ router.beforeEach((to, from, next) => {
   const authRequired = !publicPages.includes(to.path);
   const loggedIn = $global.$store.sessionId;
   if (authRequired && !loggedIn) {
-    this.$store.tokenId = "";
-    this.$store.sessionId = "";
+    $global.$store.$reset();
     next('/');
   } else {
     if (to.path == '/welcomeDashboard/' || to.path == '/welcomeDashboard') {
@@ -57,8 +56,9 @@ router.beforeEach((to, from, next) => {
       next({
         name: from.name
       })
+    } else {
+      next();
     }
-    next();
   }
 });
 

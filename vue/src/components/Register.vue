@@ -39,9 +39,9 @@ export default {
     },
     data() {
         return {
-            userName: '',
-            mobile: '',
-            email: "",
+            userName: 'BenTest',
+            mobile: '7373843646',
+            email: "bentest@gmail.com",
             notificationStatus: true
         }
     },
@@ -63,7 +63,7 @@ export default {
                 id: '',
                 stringValue: aesUtil.methods.testEncrypt(JSON.stringify(formData), this.$store.tokenId)
             };
-            axios.post(this.$addUser, jsonFormdata, {
+            axios.post(this.$signup, jsonFormdata, {
                 headers: {
                     'auth_token': this.$store.tokenId
                 }
@@ -79,8 +79,15 @@ export default {
                     this.clear();
                     // this.warnAlert(jsonString.stringValue, '', 'success')
                 }
-            })
+            }).catch(err => {
+                alert(err.response.data.message)
+            });
         },
+    },
+    created() {
+        axios.post(this.$getToken).then(res => {
+            this.$store.tokenId = JSON.parse(res.data);
+        })
     }
 }
 </script>

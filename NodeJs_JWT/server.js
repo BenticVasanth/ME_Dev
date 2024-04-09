@@ -33,6 +33,7 @@ app.get("/", (req, res) => {
 // routes
 require('./components/routes/auth.routes')(app);
 require('./components/routes/user.routes')(app);
+require('./components/routes/sabbath.routes')(app);
 
 // set port, listen for requests
 const PORT = process.env.PORT || 8081;

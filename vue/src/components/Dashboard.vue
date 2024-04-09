@@ -1,6 +1,9 @@
 <template>
 <div>
-    <h1 @click="bibleCommentary">Welcome Dashboard</h1>
+    <h1 @click="sabbathDayDoc">sabbathDayDoc</h1>
+    <br>
+    <br>
+    <h1 @click="userList">userList</h1>
     <br>
     <br>
     <h2 @click="logout">Logout</h2>
@@ -53,7 +56,6 @@ export default {
             }).then(res => {
                 var base64StringValue = aesUtil.methods.testDecrypt(res.data, this.$store.tokenId);
                 var jsonString = JSON.parse(base64StringValue);
-                console.log(jsonString);
                 if (jsonString.id == 1) {
                     alert(jsonString.stringValue)
                     this.router.push({
@@ -67,7 +69,7 @@ export default {
         }
     },
     created() {
-        this.userList();
+        this.sabbathDayDoc();
     }
 }
 </script>

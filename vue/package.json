@@ -14,17 +14,12 @@
     "bootstrap-vue": "^2.23.1",
     "core-js": "^3.8.3",
     "crypto-js": "^4.1.1",
-    "js-sha512": "^0.8.0",
     "pinia": "^2.0.30",
     "pinia-plugin-persistedstate": "^3.0.2",
     "router": "^2.0.0-beta.1",
-    "sweetalert": "^2.1.2",
-    "vue": "^3.2.13",
+    "vue": "^3.4.21",
     "vue-axios": "^3.5.2",
-    "vue-router": "^4.1.6",
-    "vue-tippy": "^6.2.0",
-    "vue2-datepicker": "^3.11.1",
-    "vuejs-paginate-next": "^1.0.2"
+    "vue-router": "^4.1.6"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",

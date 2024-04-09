@@ -2,7 +2,6 @@ const { authJwt } = require("../middleware");
 const userController = require("../controllers/user.controller");
 
 module.exports = function (app) {
-  console.log('user.routes');
   app.use(function (req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
@@ -14,7 +13,7 @@ module.exports = function (app) {
   });
 
   // Create a new Users
-  // app.post("/api/addUser", userController.create);
+  // app.post("/login/addUser", userController.create);
 
   // Retrieve all Users
   app.get("/api/userList", [authJwt.verifyToken], userController.findAll);

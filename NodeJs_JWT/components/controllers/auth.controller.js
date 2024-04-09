@@ -2,79 +2,55 @@ const db = require("../models");
 const User = db.userModal;
 const authJwt = require("../middleware/authJwt");
 const aesUtil = require("../../assets/js/aesUtil");
+const config = require("../config/auth.config.js");
+const validations = require("../../assets/js/validations");
+
+exports.getToken = (req, res) => {
+  let getSetToken = authJwt.setToken(JSON.stringify(config.secret));
+  return res.status(200).json(JSON.stringify(getSetToken));
+}
 
 exports.signup = (req, res) => {
   let ip = (req.headers['x-forwarded-for'] || '').split(',')[0] || req.connection.remoteAddress;
+  // let dateTime = new Date().toLocaleString("sv", { timeStyle: 'medium', dateStyle: 'short', timeZone: 'Asia/Kolkata' });
+  let response = JSON.parse(aesUtil.testDecrypt(req.body.stringValue, req.get('auth_token')));
   let genPassword = Math.floor(Math.random() * (100000000 - 999999999)) + 1000000000;
   // Save User to Database
   User.create({
-    Name: req.body.userName,
-    Mobile: req.body.mobile,
-    Email: req.body.email,
+    Name: response.userName,
+    Mobile: response.mobile,
+    Email: response.email,
     Password: genPassword + "@Jesus",
     UserIP: ip,
     Location: ip,
     UserType: "User",
     CreatedDateTime: '',
     IsActive: 1,
-    IsNotification: req.body.notificationStatus
+    IsNotification: response.notificationStatus
   })
     .then(() => {
       let userDetailsList = {
         id: "1",
         stringValue: "Saved Sucessfull"
       }
-      res.json(JSON.stringify(userDetailsList))
-      // let obj = {
-      //   userId: response.email,
-      //   password: genPassword + "@Jesus"
-      // }
+      let obj = {
+        userId: response.email,
+        password: genPassword + "@Jesus"
+      }
+      validations.MailRequest(obj).then(x => {
+        return res.json(aesUtil.testEncrypt(JSON.stringify(userDetailsList), global.auth_token));
+      }).catch(err => {
+        return res.json(aesUtil.testEncrypt(JSON.stringify(err), global.auth_token));
+      })
     })
     .catch(err => {
-      console.log(err);
       return res.status(500).send({ message: err.message || "Some error occurred while creating the Users." });
     });
 };
 
-// exports.signin = (req, res) => {
-//   User.findOne({
-//     where: {
-//       Email: req.body.email,
-//       Password: req.body.password
-//     }
-//   })
-//     .then(user => {
-//       if (!user) {
-//         return res.status(404).send({ message: "User Not found." });
-//       }
-
-//       var passwordIsValid = req.body.password;
-
-//       if (!passwordIsValid) {
-//         return res.status(401).send({
-//           accessToken: null,
-//           message: "Invalid Password!"
-//         });
-//       }
-
-//       authJwt.setToken(user.id);
-
-//       let validUser = {
-//         id: "1",
-//         stringValue: "Valid User",
-//         auth_token: global.auth_token
-//       }
-//       res.status(200).json(validUser);
-//     })
-//     .catch(err => {
-//       res.status(500).send({ message: err.message });
-//     });
-// };
-
 exports.signin = async (req, res) => {
   const userId = req.body.email;
   const password = req.body.password;
-
   if (userId && password) {
     let checkValidUser = await User.findOne({ where: { Email: userId, Password: password } })
     if (checkValidUser === null) {

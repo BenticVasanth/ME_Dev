@@ -1,20 +1,20 @@
 <template>
-<div id="app">
-    <div>
-        <router-view />
-    </div>
-</div>
+<router-view />
 </template>
 
 <script>
-import { useCommonStore } from '@/stores/store';
-import { getCurrentInstance } from 'vue'
+import {
+    useCommonStore
+} from '@/stores/store';
+import {
+    getCurrentInstance
+} from 'vue'
 
 export default {
     name: 'App',
-    components: { },
+    components: {},
     data() {
-        return { }
+        return {}
     },
     computed: {
         getloadeddatas() {
