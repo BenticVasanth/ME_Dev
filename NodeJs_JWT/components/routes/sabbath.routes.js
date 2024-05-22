@@ -1,5 +1,12 @@
 const { authJwt } = require("../middleware");
 const sabbathController = require("../controllers/sabbath.controller");
+const multer = require('multer');
+const upload = multer({
+  storage: multer.memoryStorage(),
+  limits: {
+    fieldSize: 25 * 1024 * 1024, // 25MB
+  },
+});
 
 module.exports = function (app) {
   app.use(function (req, res, next) {
@@ -14,4 +21,5 @@ module.exports = function (app) {
 
   // Retrieve all Sabbath Doc
   app.get("/api/sabbathDoc", [authJwt.verifyToken], sabbathController.findAll);
+  app.post("/api/sabbathDocUpload", upload.array("files"), [authJwt.verifyToken], sabbathController.sabbathDocUpload);
 };

@@ -3,6 +3,9 @@
     <h1 @click="sabbathDayDoc">sabbathDayDoc</h1>
     <br>
     <br>
+    <FileUpload />
+    <br>
+    <br>
     <h1 @click="userList">userList</h1>
     <br>
     <br>
@@ -14,6 +17,7 @@
 </template>
 
 <script>
+import FileUpload from './fileUpload.vue'
 import aesUtil from '@/assets/js/aesUtil.js';
 import axios from 'axios';
 export default {
@@ -22,6 +26,9 @@ export default {
         return {
             sabbathDocList: "",
         }
+    },
+    components: {
+        FileUpload
     },
     methods: {
         userList() {

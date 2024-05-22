@@ -1,7 +1,9 @@
 module.exports = (sequelize, DataTypes) => {
   const Sabbath = sequelize.define("Documents", {
-    IntId: {
+    id: {
+      field: "IntId",
       type: DataTypes.INTEGER,
+      autoIncrement: true,
       primaryKey: true
     },
     DocumentID: {
@@ -25,8 +27,10 @@ module.exports = (sequelize, DataTypes) => {
     CreatedBy: {
       type: DataTypes.STRING
     },
-    CreatedDateTime: {
-      type: DataTypes.DATE
+    createdAt: {
+      field: "CreatedDateTime",
+      type: DataTypes.DATE,
+      defaultValue: sequelize.Sequelize.fn('getdate'),
     },
     Status: {
       type: DataTypes.BOOLEAN

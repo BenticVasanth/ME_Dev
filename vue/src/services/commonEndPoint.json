@@ -6,5 +6,6 @@
 	{"logout" : "login/logout"},
 	{"userList" : "api/userList"},
 	{"sabbathDoc" : "api/sabbathDoc"},
+	{"sabbathDocUpload" : "api/sabbathDocUpload"},
 	{"bibleCommentaryDoc" : "api/bibleCommentaryDoc"}
 ]

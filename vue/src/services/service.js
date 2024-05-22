@@ -23,49 +23,40 @@ class CommonService {
         });
     }
 
-    async post(url, data = "", optData = "") {
+    async post(url, data = "", option = "") {
         let userData;
-        let token;
-        if (typeof data == "object") {
-            userData = this.dataManipulation(data);
-        } else {
-            userData = btoa(data);
-        }
+        let jsonFormdata;
         let tokenId = $global.$store.tokenId;
-        let secureToken = $global.$store.secureToken;
-        let serviceToken = secureToken + tokenId;
-        if (optData == "mailToken") {
-            token = {
-                headers: {
-                    'auth_token': tokenId,
-                    'mailsms_token': this.getStore().mailSmsToken
-                }
+        let token = {
+            headers: {
+                'auth_token': tokenId,
+                'Content-Type': 'multipart/form-data'
+            }
+        };
+        if (option != 'file') {
+            if (typeof data == "object") {
+                userData = this.dataManipulation(data);
+            } else {
+                userData = btoa(data);
+            }
+            jsonFormdata = {
+                id: '',
+                stringValue: aesUtil.methods.testEncrypt(userData, tokenId)
             };
         } else {
-            token = {
-                headers: {
-                    'auth_token': tokenId
-                }
-            };
-            if (optData == "jnlp") {
-                token['responseType'] = 'arraybuffer';
-            }
+            jsonFormdata = data
+            console.log('jsonFormdata : ' + jsonFormdata);
         }
-        let jsonFormdata = {
-            id: this.getStore().userSesId,
-            stringValue: aesUtil.methods.encrypt(serviceToken, userData)
-        };
         return await axios.post(url, jsonFormdata, token).then(response => {
-            this.nullToken(response);
-            this.tokenSet(response, url);
-            this.setStore('pageloading', false);
-
-            if (optData == 'jnlp') {
-                return response;
-            } else {
+            if (option != 'file') {
+                this.nullToken(response);
+                this.tokenSet(response, url);
+                this.setStore('pageloading', false);
                 let hashBase64StringValue = aesUtil.methods.decryptEncodeURIComponent($global.$store.secureToken, atob(response.data));
                 let hashJsonString = JSON.parse(decodeURIComponent(escape(atob(hashBase64StringValue))));
                 return hashJsonString;
+            } else {
+                return response
             }
         }).catch((e) => {
             this.forCatch(e);
@@ -155,9 +146,25 @@ class CommonService {
         } else if (e.response.status != '200' && e.response.status != '503') {
             let url = e.response.config.url;
             let serviceName = url.substring(url.lastIndexOf('/') + 1, url.length);
-            $global.CommomnJs.methods.warnAlert('Failed', 'HTTP code : ' + e.response.status + ', Service Name : ' + serviceName + ', Something went wrong.', 'failure');
+            // $global.CommomnJs.methods.warnAlert('Failed', 'HTTP code : ' + e.response.status + ', Service Name : ' + serviceName + ', Something went wrong.', 'failure');
+            if (confirm('Failed', 'HTTP code : ' + e.response.status + ', Service Name : ' + serviceName + ', Something went wrong.', 'failure') == true) {
+                $global.$store.$reset()
+                $global.router.push({
+                    path: "/"
+                });
+            } else {
+                return false
+            }
         } else {
-            $global.CommomnJs.methods.warnAlert('Failed', e.response.message, 'failure');
+            // $global.CommomnJs.methods.warnAlert('Failed', e.response.message, 'failure');
+            if (confirm('Failed', e.response.message, 'failure') == true) {
+                $global.$store.$reset()
+                $global.router.push({
+                    path: "/"
+                });
+            } else {
+                return false
+            }
         }
     }
 
@@ -168,12 +175,6 @@ class CommonService {
             alert('ServerDown');
         }
         return serverStat;
-    }
-
-    get_userid() {
-        let hashBase64StringValue = aesUtil.methods.decrypt($global.$store.secureToken, atob(this.getStore().data));
-        let userId = JSON.parse(atob(hashBase64StringValue)).userId;
-        return userId;
     }
 
     intercept() {

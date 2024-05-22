@@ -2,8 +2,6 @@ const jwt = require("jsonwebtoken");
 const config = require("../config/auth.config.js");
 
 verifyToken = (req, res, next) => {
-  console.log('verifyToken');
-
   let oldToken = req.headers.auth_token;
   if (!oldToken) {
     return res.status(403).send("No token provided!");
@@ -12,7 +10,7 @@ verifyToken = (req, res, next) => {
   let sessionTime = verifySessionTime(oldToken);
 
   if (sessionTime) {
-    res.status(403).send('Session expired');
+    res.status(440).send('Session expired');
   } else {
     jwt.verify(oldToken,
       config.secret,
@@ -20,7 +18,6 @@ verifyToken = (req, res, next) => {
         if (err) {
           return res.status(401).send("Unauthorized!");
         }
-        console.log(decoded);
         let newToken = setToken(decoded.id);
         verifySessionTime(newToken);
         req.userId = decoded.id;
@@ -30,7 +27,6 @@ verifyToken = (req, res, next) => {
 };
 
 function verifySessionTime(token) {
-  console.log(token);
   global.auth_token = token;
   const payloadBase64 = token.split('.')[1];
   const decodedJson = Buffer.from(payloadBase64, 'base64').toString();
@@ -38,22 +34,7 @@ function verifySessionTime(token) {
   const exp = decodedTime.exp;
   const iat = decodedTime.iat;
   const expired = (Date.now() >= exp * 1000)
-
   global.sessionExpTime = exp;
-
-  console.log('-----------');
-  console.log('verifyToken Start');
-  console.log('-----------');
-
-  console.log("Date.now() :" + Date.now());
-  console.log("iat :" + iat * 1000);
-  console.log("exp :" + exp * 1000);
-  console.log("expired :" + expired);
-
-  console.log('-----------');
-  console.log('verifyToken End');
-  console.log('-----------');
-
   return expired
 }
 
@@ -63,7 +44,7 @@ function setToken(id) {
     {
       algorithm: 'HS256',
       allowInsecureKeySizes: true,
-      expiresIn: 10, //Sec
+      expiresIn: 60, //Sec
     });
 
   global.auth_token = token;
