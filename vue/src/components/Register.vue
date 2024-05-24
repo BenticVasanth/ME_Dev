@@ -61,14 +61,14 @@ export default {
             };
             var jsonFormdata = {
                 id: '',
-                stringValue: aesUtil.methods.testEncrypt(JSON.stringify(formData), this.$store.tokenId)
+                stringValue: aesUtil.methods.encrypt(JSON.stringify(formData), this.$store.tokenId)
             };
             axios.post(this.$signup, jsonFormdata, {
                 headers: {
                     'auth_token': this.$store.tokenId
                 }
             }).then(res => {
-                var base64StringValue = aesUtil.methods.testDecrypt(res.data, this.$store.tokenId);
+                var base64StringValue = aesUtil.methods.decrypt(res.data, this.$store.tokenId);
                 // this.$store.tokenId = res.headers.auth_token;
                 var jsonString = JSON.parse(base64StringValue);
                 if (jsonString.id == 0) {

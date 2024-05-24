@@ -44,7 +44,7 @@ function setToken(id) {
     {
       algorithm: 'HS256',
       allowInsecureKeySizes: true,
-      expiresIn: 60, //Sec
+      expiresIn: 6000, //Sec
     });
 
   global.auth_token = token;

@@ -3,7 +3,7 @@ const User = db.userModal;
 const aesUtil = require("../../assets/js/aesUtil");
 
 checkDuplicateUsernameOrEmail = (req, res, next) => {
-  let response = JSON.parse(aesUtil.testDecrypt(req.body.stringValue, req.get('auth_token')));
+  let response = JSON.parse(aesUtil.decrypt(req.body.stringValue, req.get('auth_token')));
   // Username
   User.findOne({
     where: {

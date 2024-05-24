@@ -20,6 +20,7 @@ module.exports = function (app) {
   });
 
   // Retrieve all Sabbath Doc
-  app.get("/api/sabbathDoc", [authJwt.verifyToken], sabbathController.findAll);
+  app.post("/api/sabbathDoc", [authJwt.verifyToken], sabbathController.findAll);
   app.post("/api/sabbathDocUpload", upload.array("files"), [authJwt.verifyToken], sabbathController.sabbathDocUpload);
+  app.post("/api/sabbathDocDownload", [authJwt.verifyToken], sabbathController.sabbathDocDownload);
 };

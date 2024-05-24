@@ -13,7 +13,7 @@ exports.getToken = (req, res) => {
 exports.signup = (req, res) => {
   let ip = (req.headers['x-forwarded-for'] || '').split(',')[0] || req.connection.remoteAddress;
   // let dateTime = new Date().toLocaleString("sv", { timeStyle: 'medium', dateStyle: 'short', timeZone: 'Asia/Kolkata' });
-  let response = JSON.parse(aesUtil.testDecrypt(req.body.stringValue, req.get('auth_token')));
+  let response = JSON.parse(aesUtil.decrypt(req.body.stringValue, req.get('auth_token')));
   let genPassword = Math.floor(Math.random() * (100000000 - 999999999)) + 1000000000;
   // Save User to Database
   User.create({
@@ -38,9 +38,9 @@ exports.signup = (req, res) => {
         password: genPassword + "@Jesus"
       }
       validations.MailRequest(obj).then(x => {
-        return res.json(aesUtil.testEncrypt(JSON.stringify(userDetailsList), global.auth_token));
+        return res.json(aesUtil.encrypt(JSON.stringify(userDetailsList), global.auth_token));
       }).catch(err => {
-        return res.json(aesUtil.testEncrypt(JSON.stringify(err), global.auth_token));
+        return res.json(aesUtil.encrypt(JSON.stringify(err), global.auth_token));
       })
     })
     .catch(err => {
@@ -59,14 +59,14 @@ exports.signin = async (req, res) => {
         stringValue: "Invalid User"
       }
       return res.status(403).json(JSON.stringify(invalidUser));
-      // return res.status(403).json(aesUtil.testEncrypt(JSON.stringify(invalidUser), global.auth_token));
+      // return res.status(403).json(aesUtil.encrypt(JSON.stringify(invalidUser), global.auth_token));
     } else {
       let userDetails = {
         UserId: userId,
         Password: password
       }
       authJwt.setToken(JSON.stringify(userDetails));
-      let encryptUserData = (aesUtil.testEncrypt(JSON.stringify(userDetails), global.auth_token));
+      let encryptUserData = (aesUtil.encrypt(JSON.stringify(userDetails), global.auth_token));
       let validUser = {
         id: "1",
         stringValue: "Valid User",
@@ -74,13 +74,13 @@ exports.signin = async (req, res) => {
       }
       // return res.status(200).json(JSON.stringify(validUser));
       res.setHeader('auth_token', global.auth_token);
-      return res.status(200).json(aesUtil.testEncrypt(JSON.stringify(validUser), global.auth_token));
+      return res.status(200).json(aesUtil.encrypt(JSON.stringify(validUser), global.auth_token));
     }
   } else {
     let invalidUser = {
       id: "0",
       stringValue: "Invalid User"
     }
-    return res.status(403).json(aesUtil.testEncrypt(JSON.stringify(invalidUser), global.auth_token));
+    return res.status(403).json(aesUtil.encrypt(JSON.stringify(invalidUser), global.auth_token));
   }
 };

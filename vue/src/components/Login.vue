@@ -41,7 +41,7 @@ export default {
                 password: this.password
             };
             axios.post(this.$signin, formData).then(res => {
-                var base64StringValue = aesUtil.methods.testDecrypt(res.data, res.headers.auth_token);
+                var base64StringValue = aesUtil.methods.decrypt(res.data, res.headers.auth_token);
                 this.$store.tokenId = res.headers.auth_token;
                 var jsonString = JSON.parse(base64StringValue);
                 if (jsonString.id == 0) {

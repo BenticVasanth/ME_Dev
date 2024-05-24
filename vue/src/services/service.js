@@ -15,7 +15,7 @@ class CommonService {
         return await axios.get(url, token).then(response => {
             this.nullToken(response);
             this.tokenSet(response);
-            let hashJsonString = CryptoJS.AES.decrypt(response.data, $global.$store.tokenId).toString(CryptoJS.enc.Utf8);
+            let hashJsonString = aesUtil.methods.decrypt(response.data, $global.$store.tokenId);
             return JSON.parse(hashJsonString);
         }).catch((e) => {
             this.forCatch(e);
@@ -27,34 +27,28 @@ class CommonService {
         let userData;
         let jsonFormdata;
         let tokenId = $global.$store.tokenId;
-        let token = {
-            headers: {
-                'auth_token': tokenId,
-                'Content-Type': 'multipart/form-data'
-            }
-        };
+        let token;
         if (option != 'file') {
-            if (typeof data == "object") {
-                userData = this.dataManipulation(data);
-            } else {
-                userData = btoa(data);
-            }
+            // if (typeof data == "object") {
+            //     userData = this.dataManipulation(data);
+            // } else {
+            //     userData = btoa(data);
+            // }
             jsonFormdata = {
                 id: '',
-                stringValue: aesUtil.methods.testEncrypt(userData, tokenId)
+                stringValue: aesUtil.methods.encrypt(JSON.stringify(data), $global.$store.tokenId)
             };
+            token = { headers: { 'auth_token': tokenId } };
         } else {
-            jsonFormdata = data
-            console.log('jsonFormdata : ' + jsonFormdata);
+            jsonFormdata = data;
+            token = { headers: { 'auth_token': tokenId, 'Content-Type': 'multipart/form-data' } };
         }
         return await axios.post(url, jsonFormdata, token).then(response => {
             if (option != 'file') {
                 this.nullToken(response);
                 this.tokenSet(response, url);
-                this.setStore('pageloading', false);
-                let hashBase64StringValue = aesUtil.methods.decryptEncodeURIComponent($global.$store.secureToken, atob(response.data));
-                let hashJsonString = JSON.parse(decodeURIComponent(escape(atob(hashBase64StringValue))));
-                return hashJsonString;
+                let hashJsonString = aesUtil.methods.decrypt(response.data, $global.$store.tokenId);
+                return JSON.parse(hashJsonString);
             } else {
                 return response
             }
@@ -64,26 +58,19 @@ class CommonService {
         });
     }
 
-    dataManipulation(data) {
-        for (let key in data) {
-            if (typeof data[key] == 'string') {
-                let str = data[key].replace(/\s+/g, ' ');
-                data[key] = str.trim();
-            }
-        }
-        return JSON.stringify(data);
-    }
+    // dataManipulation(data) {
+    //     for (let key in data) {
+    //         if (typeof data[key] == 'string') {
+    //             let str = data[key].replace(/\s+/g, ' ');
+    //             data[key] = str.trim();
+    //         }
+    //     }
+    //     return JSON.stringify(data);
+    // }
 
     async tokenSet(response) {
-
         if (response.headers.auth_token)
             $global.$store.tokenId = response.headers.auth_token;
-
-        if (response.headers.mailsms_token)
-            this.setStore('mailSmsToken', response.headers.mailsms_token);
-
-        if (response.headers.ses_token)
-            $global.$store.ses_token = response.headers.ses_token;
     }
 
     nullToken(response) {
