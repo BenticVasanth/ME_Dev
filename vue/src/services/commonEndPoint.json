@@ -7,5 +7,6 @@
 	{"userList" : "api/userList"},
 	{"sabbathDoc" : "api/sabbathDoc"},
 	{"sabbathDocUpload" : "api/sabbathDocUpload"},
+	{"sabbathDocDownload":"api/sabbathDocDownload"},
 	{"bibleCommentaryDoc" : "api/bibleCommentaryDoc"}
 ]

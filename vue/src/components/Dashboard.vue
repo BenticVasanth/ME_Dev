@@ -84,7 +84,6 @@ export default {
             })
         },
         downloadFile(obj) {
-
             this.filename = obj
             console.log(this.filename)
             if (!this.filename) {
@@ -93,22 +92,24 @@ export default {
             }
 
             try {
-                const response = axios({
-                    url: `/download/${this.filename}`,
-                    method: 'GET',
-                    responseType: 'blob'
-                });
+                this.service.post(this.$sabbathDocDownload, this.filename).then(res => {
+                    // Create a link element
+                    const url = window.URL.createObjectURL(new Blob([res.data]));
+                    const link = document.createElement('a');
+                    link.href = url;
+                    link.setAttribute('download', this.filename); // The file name to save as
+                    document.body.appendChild(link);
+                    link.click();
 
-                // Create a link element
-                const url = window.URL.createObjectURL(new Blob([response.data]));
-                const link = document.createElement('a');
-                link.href = url;
-                link.setAttribute('download', this.filename); // The file name to save as
-                document.body.appendChild(link);
-                link.click();
+                    // Clean up and remove the link
+                    link.parentNode.removeChild(link);
+                })
+                // const response = axios({
+                //     url: `/download/${this.filename}`,
+                //     method: 'GET',
+                //     responseType: 'blob'
+                // });
 
-                // Clean up and remove the link
-                link.parentNode.removeChild(link);
             } catch (error) {
                 console.error('Error downloading the file:', error);
                 alert('Error downloading the file');

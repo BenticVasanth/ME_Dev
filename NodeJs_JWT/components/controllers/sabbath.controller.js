@@ -64,9 +64,10 @@ exports.sabbathDocUpload = async (req, res) => {
   }
 }
 
-exports.sabbathDocDownload= (req, res) => {
-  const filename = req.params.filename;
-    const file = path.join(__dirname, 'uploads', filename);
-    console.log(file)
-    res.download(file)
+exports.sabbathDocDownload = (req, res) => {
+  let filename = JSON.parse(aesUtil.decrypt(req.body.stringValue, req.get('auth_token')));
+  console.log(filename);
+  const file = path.join(__dirname, '../../Documents/SabbathDayMeditation', filename);
+  console.log(file)
+  res.download(file)
 }
